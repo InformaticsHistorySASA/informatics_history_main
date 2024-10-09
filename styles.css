@@ -6,14 +6,21 @@ body {
     background-color: #c0c0c0;
     
     /* font-family: Helvetica, sans-serif; */
-    font-family: "Raleway"
+    font:bold;
+    font-family: 'Gowun Batang';
 }
 
 .menu{
     display: flex;
-    position:relative;
+    position: static;
     justify-content: center;
     background-color: #333;
+    top: 0; /* 페이지 맨 위에 붙도록 설정 */
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
 }
 .menu ul li{
     display: inline;
@@ -31,6 +38,7 @@ body {
     border-radius: 5px;
 }
 /* The actual timeline (the vertical ruler) */
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -173,8 +181,6 @@ body {
     .right {
         left: 0%;
     }
-
-    
 }
 .summary {
     display: flex;
@@ -183,4 +189,78 @@ body {
 img {
     width: 30%;
     height: auto;
+}
+.info{
+    position: fixed; /* 화면에 고정 */
+    width: auto;
+    max-width: 80%; /* 텍스트 박스가 너무 길지 않도록 최대 너비 제한 */
+    height: auto;
+    background-color: black; /* 배경색을 검은색으로 설정 */
+    color: white;
+    padding: 20px; /* 텍스트 주변 여백 */
+    text-align: justify;
+    top: 50%; /* 화면의 세로 중앙 */
+    left: 50%; /* 화면의 가로 중앙 */
+    transform: translate(-50%, -50%); /* 정확하게 중앙에 위치하도록 조정 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 박스 그림자 */
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 20px; /* 아래에서 20px */
+    right: 20px;  /* 오른쪽에서 20px */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease;
+    z-index: 1000;
+}
+.info.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.info.info-text{
+    color:white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명한 회색 배경 */
+    z-index: 999; /* 텍스트 박스 바로 아래 */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* ? 버튼을 눌렀을 때 모달 배경이 보이도록 설정 */
+.overlay.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.menu-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.menu-container.open {
+    max-height: 300px;
 }

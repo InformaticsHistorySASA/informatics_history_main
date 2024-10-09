@@ -1,0 +1,58 @@
+[
+    {
+        "year": "1999",
+        "text": "하드웨어 1: Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"HARDWARE"
+    },
+    {
+        "year": "1882",
+        "text": "하드웨어 2: Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"HARDWARE"
+    },
+    {
+        "year": "1999",
+        "text": "소프트웨어 1: Phasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"SOFTWARE"
+    },
+    {
+        "year": "2016",
+        "text": "소프트웨어 2: hummPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"SOFTWARE"
+    },
+    {
+        "year": "2016",
+        "text": "네트워크 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"NETWORK & SECURITY"
+    },
+    {
+        "year": "2016",
+        "text": "보안 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"NETWORK & SECURITY"
+    },
+    {
+        "year": "2016",
+        "text": "데이터 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"DATA & AI"
+    },
+    {
+        "year": "2016",
+        "text": "인공지능 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
+        "major_field":"DATA & AI"
+    }
+]
