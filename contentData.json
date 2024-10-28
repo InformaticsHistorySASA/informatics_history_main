@@ -1,55 +1,62 @@
 [
     {
-        "year": "1999",
-        "text": "하드웨어 1: Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum.",
+        "year": "-300",
+        "text": "최초의 알고리즘",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "./single.html",
+        "major_field":"SOFTWARE"
+    },
+    {
+        "year": "2010",
+        "text": "테스트테스트",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "./single.html",
+        "major_field":"HARDWARE"
+    },
+    {
+        "year": "2011",
+        "text": "유닉스 커널을 C 언어로 재작성",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
         "major_field":"HARDWARE"
     },
     {
-        "year": "1882",
-        "text": "하드웨어 2: Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.",
-        "image": "새 비트맵 이미지.bmp",
-        "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-        "major_field":"HARDWARE"
-    },
-    {
-        "year": "1999",
+        "year": "2012",
         "text": "소프트웨어 1: Phasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
         "major_field":"SOFTWARE"
     },
     {
-        "year": "2016",
+        "year": "2020",
         "text": "소프트웨어 2: hummPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
         "major_field":"SOFTWARE"
     },
     {
-        "year": "2016",
+        "year": "2030",
         "text": "네트워크 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
         "major_field":"NETWORK & SECURITY"
     },
     {
-        "year": "2016",
+        "year": "2031",
         "text": "보안 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
         "major_field":"NETWORK & SECURITY"
     },
     {
-        "year": "2016",
+        "year": "2040",
         "text": "데이터 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
         "major_field":"DATA & AI"
     },
     {
-        "year": "2016",
+        "year": "2077",
         "text": "인공지능 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
         "image": "새 비트맵 이미지.bmp",
         "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
