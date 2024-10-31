@@ -93,3 +93,38 @@
 			});
 
 })(jQuery);
+
+
+function copyText() {
+    const textToCopy = "informatics.history.sasa@gmail.com";
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert("메일 주소가 복사되었습니다!");
+        })
+        .catch(err => {
+            console.error("복사에 실패했습니다.", err);
+        });
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchForm = document.getElementById('search');
+    const isContentsPage=window.location.pathname.endsWith('contents.html');
+
+
+    searchForm.addEventListener('submit', (event) => {
+			const searchInput = document.getElementById('searchInput');
+			const query = searchInput.value.trim();
+			
+			if (query) {
+				console.log(isContentsPage);
+				if (!isContentsPage) {
+					window.location.replace(`contents.html?query=${encodeURIComponent(query)}`);
+				} else {
+					window.location.href = `?query=${encodeURIComponent(query)}`;
+				}
+			}
+			else window.location.href="contents.html"; 
+		}
+	);
+});
