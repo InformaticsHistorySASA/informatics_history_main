@@ -129,26 +129,23 @@
 
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
   }
 
-  @media (min-width: 768px) {
-    .cards-container {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
   .card {
+    width: 200px;
+    height: 282px; /* Fixed aspect ratio of 1:1.414 */
     border: 1px solid #ccc;
     padding: 1em;
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
     background: #f9f9f9;
+    margin: auto;
   }
 
   .card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
   }
