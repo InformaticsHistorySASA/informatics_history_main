@@ -25,7 +25,7 @@ if(urlSearch.has('id')){
     //     "date" : "2024-10-31",
     //     "content":"<iframe src=\"./heh.html\" />"
     // });
-    fetch(`../../posts/${postId}.json`)
+    fetch(`posts/${postId}.json`)
         .then(response => response.json())  // JSON 파일을 파싱
         .then(handleData)
         .catch(error => console.error('Error loading JSON:', error)); // 오류 처리
