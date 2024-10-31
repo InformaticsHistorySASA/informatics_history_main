@@ -21,11 +21,11 @@
 						<h1><a href="index.html">세계를 움직이는 정보과학의 역사</a></h1>
 						<nav class="links">
 							<ul>
-								<li><a href="#">TIMELINE</a></li>
+								<li><a href="./timeline.html">TIMELINE</a></li>
 								<li><a href="./contents.html">CONTENTS</a></li>
-								<li><a href="#">CHARACTER CARDS</a></li>
-								<li><a href="#">EDITER PAGE</a></li>
-								<li><a href="#">DEVELOPERS</a></li>
+								<li><a href="./character_cards">CHARACTER CARDS</a></li>
+								<li><a href="./editer_page">EDITER PAGE</a></li>
+								<li><a href="./developers">DEVELOPERS</a></li>
 							</ul>
 						</nav>
 						<nav class="main">
@@ -33,7 +33,7 @@
 								<li class="search">
 									<a class="fa-search" href="#search">Search</a>
 									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
+										<input type="text" id="searchInput" placeholder="Search" />
 									</form>
 								</li>
 							</ul>
@@ -122,18 +122,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				function copyText() {
-					const textToCopy = "informatics.history.sasa@gmail.com"; // 원하는 텍스트로 변경하세요.
-					navigator.clipboard.writeText(textToCopy)
-						.then(() => {
-							alert("메일 주소가 복사되었습니다!");
-						})
-						.catch(err => {
-							console.error("복사에 실패했습니다.", err);
-						});
-				}
-			</script>
-
 	</body>
 </html>
