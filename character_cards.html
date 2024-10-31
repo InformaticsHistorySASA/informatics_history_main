@@ -42,62 +42,55 @@
 
       <!-- Main -->
       <div id="main">
-        <!-- Character Cards Section -->
+        <!-- Character Cards -->
         <section class="character-cards">
           <div class="cards-container">
-            <!-- Example Card: Alan Turing -->
-            <article class="card">
-              <header>
-                <span class="image featured"><img src="images/alan_turing.jpg" alt="Alan Turing"></span>
-                <h2>Alan Turing</h2>
-              </header>
-              <div class="content">
-                <p>영국의 수학자이자 암호학자. 현대 컴퓨터 과학의 아버지라 불리며, 제2차 세계 대전 당시 암호 해독에 큰 기여를 했습니다. 튜링 기계와 튜링 테스트로 잘 알려져 있습니다.</p>
-              </div>
-              <footer>
-                <ul class="actions">
-                  <li><a href="#" class="button">Learn More</a></li>
-                </ul>
-              </footer>
-            </article>
-
-            <!-- Example Card: Ada Lovelace -->
-            <article class="card">
-              <header>
-                <span class="image featured"><img src="images/ada_lovelace.jpg" alt="Ada Lovelace"></span>
-                <h2>Ada Lovelace</h2>
-              </header>
-              <div class="content">
-                <p>세계 최초의 컴퓨터 프로그래머로 불리는 영국의 수학자. 찰스 배비지의 기계적 컴퓨터를 위한 최초의 알고리즘을 작성했습니다.</p>
-              </div>
-              <footer>
-                <ul class="actions">
-                  <li><a href="#" class="button">Learn More</a></li>
-                </ul>
-              </footer>
-            </article>
-
-            <!-- Example Card: Grace Hopper -->
-            <article class="card">
-              <header>
-                <span class="image featured"><img src="images/grace_hopper.jpg" alt="Grace Hopper"></span>
-                <h2>Grace Hopper</h2>
-              </header>
-              <div class="content">
-                <p>미국의 컴퓨터 과학자이자 해군 제독. 컴파일러의 개념을 도입해 컴퓨터 프로그래밍의 혁신을 이끈 인물로, COBOL 언어의 개발에 기여했습니다.</p>
-              </div>
-              <footer>
-                <ul class="actions">
-                  <li><a href="#" class="button">Learn More</a></li>
-                </ul>
-              </footer>
-            </article>
+            <div class="card">
+              <img src="assets/images/person1.jpg" alt="Character 1">
+              <h3>Alan Turing</h3>
+              <p>Father of modern computing, known for his work on theoretical computer science and artificial intelligence.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person2.jpg" alt="Character 2">
+              <h3>Grace Hopper</h3>
+              <p>Pioneer in computer programming, known for her work on developing the first compiler.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person3.jpg" alt="Character 3">
+              <h3>Claude Shannon</h3>
+              <p>Founder of information theory, which laid the foundation for digital communication.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person4.jpg" alt="Character 4">
+              <h3>Ada Lovelace</h3>
+              <p>First computer programmer, known for her work on Charles Babbage's early mechanical general-purpose computer.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person5.jpg" alt="Character 5">
+              <h3>John von Neumann</h3>
+              <p>Mathematician who made major contributions to computer architecture, including the concept of the stored-program computer.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person6.jpg" alt="Character 6">
+              <h3>Donald Knuth</h3>
+              <p>Author of "The Art of Computer Programming" and a pioneer in algorithm analysis.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person7.jpg" alt="Character 7">
+              <h3>Barbara Liskov</h3>
+              <p>Noted for her work in programming languages and software engineering, and the Liskov substitution principle.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person8.jpg" alt="Character 8">
+              <h3>Tim Berners-Lee</h3>
+              <p>Inventor of the World Wide Web, which revolutionized how we access and share information globally.</p>
+            </div>
           </div>
         </section>
       </div>
 
       <!-- Footer -->
-      <footer id="footer" class="footer-fixed">
+      <footer id="footer">
         <ul class="icons">
           <li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
           <li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -105,7 +98,6 @@
         </ul>
         <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
       </footer>
-
     </div>
 
     <!-- Scripts -->
@@ -169,14 +161,14 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
-  #footer.footer-fixed {
+  #footer {
     margin-top: 2em;
     padding-top: 2em;
     border-top: 1px solid #eaeaea;
     text-align: center;
     width: 100%;
     background-color: #fff;
-    position: fixed;
+    position: relative;
     bottom: 0;
   }
 </style>
