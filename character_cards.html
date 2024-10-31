@@ -1,107 +1,83 @@
 <!DOCTYPE HTML>
+<!--
+  Future Imperfect by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-    <title>Character Cards - Informatics Pioneers</title>
+  <head>
+    <title>Character Cards - Future Imperfect by HTML5 UP</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/cards.css"/> <!-- Add custom card styles -->
-</head>
-<body class="single is-preload">
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="character-cards is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper">
 
-        <!-- Header -->
-        <header id="header">
-            <h1><a href="index.html">세계를 움직이는 정보과학의 역사</a></h1>
-            <nav class="links">
-                <ul>
-                    <li><a href="#">TIMELINE</a></li>
-                    <li><a href="./contents.html">CONTENTS</a></li>
-                    <li><a href="#">CHARACTER CARDS</a></li>
-                    <li><a href="#">EDITER PAGE</a></li>
-                    <li><a href="#">DEVELOPERS</a></li>
-                </ul>
-            </nav>
-            <nav class="main">
-                <ul>
-                    <li class="search">
-                        <a class="fa-search" href="#search">Search</a>
-                        <form id="search" method="get" action="#">
-                            <input type="text" name="query" placeholder="Search" />
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="index.html">세계를 움직이는 정보과학의 역사</a></h1>
+        <nav class="links">
+          <ul>
+            <li><a href="#">TIMELINE</a></li>
+            <li><a href="./contents.html">CONTENTS</a></li>
+            <li><a href="#">CHARACTER CARDS</a></li>
+            <li><a href="#">EDITOR PAGE</a></li>
+            <li><a href="#">DEVELOPERS</a></li>
+          </ul>
+        </nav>
+        <nav class="main">
+          <ul>
+            <li class="search">
+              <a class="fa-search" href="#search">Search</a>
+              <form id="search" method="get" action="#">
+                <input type="text" name="query" placeholder="Search" />
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <!-- Main -->
-        <div id="main">
-
-            <!-- Character Cards Section -->
-            <section class="cards">
-                <!-- Example Card: Alan Turing -->
-                <article class="card">
-                    <header>
-                        <span class="image featured"><img src="images/alan_turing.jpg" alt="Alan Turing"></span>
-                        <h2>Alan Turing</h2>
-                    </header>
-                    <div class="content">
-                        <p>영국의 수학자이자 암호학자. 현대 컴퓨터 과학의 아버지라 불리며, 제2차 세계 대전 당시 암호 해독에 큰 기여를 했습니다. 튜링 기계와 튜링 테스트로 잘 알려져 있습니다.</p>
-                    </div>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="#" class="button">Learn More</a></li>
-                        </ul>
-                    </footer>
-                </article>
-
-                <!-- Example Card: Ada Lovelace -->
-                <article class="card">
-                    <header>
-                        <span class="image featured"><img src="images/ada_lovelace.jpg" alt="Ada Lovelace"></span>
-                        <h2>Ada Lovelace</h2>
-                    </header>
-                    <div class="content">
-                        <p>세계 최초의 컴퓨터 프로그래머로 불리는 영국의 수학자. 찰스 배비지의 기계적 컴퓨터를 위한 최초의 알고리즘을 작성했습니다.</p>
-                    </div>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="#" class="button">Learn More</a></li>
-                        </ul>
-                    </footer>
-                </article>
-
-                <!-- Example Card: Grace Hopper -->
-                <article class="card">
-                    <header>
-                        <span class="image featured"><img src="images/grace_hopper.jpg" alt="Grace Hopper"></span>
-                        <h2>Grace Hopper</h2>
-                    </header>
-                    <div class="content">
-                        <p>미국의 컴퓨터 과학자이자 해군 제독. 컴파일러의 개념을 도입해 컴퓨터 프로그래밍의 혁신을 이끈 인물로, COBOL 언어의 개발에 기여했습니다.</p>
-                    </div>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="#" class="button">Learn More</a></li>
-                        </ul>
-                    </footer>
-                </article>
-            </section>
-
-        </div>
-
-        <!-- Footer -->
-        <section id="footer">
-            <ul class="icons">
-                <li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="" class="icon solid fa-envelope" onclick="copyText()"><span class="label">Email</span></a></li>
-            </ul>
-            <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+      <!-- Main -->
+      <div id="main">
+        <!-- Character Cards -->
+        <section class="character-cards">
+          <div class="cards-container">
+            <div class="card">
+              <img src="assets/images/person1.jpg" alt="Character 1">
+              <h3>Alan Turing</h3>
+              <p>Father of modern computing, known for his work on theoretical computer science and artificial intelligence.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person2.jpg" alt="Character 2">
+              <h3>Grace Hopper</h3>
+              <p>Pioneer in computer programming, known for her work on developing the first compiler.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person3.jpg" alt="Character 3">
+              <h3>Claude Shannon</h3>
+              <p>Founder of information theory, which laid the foundation for digital communication.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/person4.jpg" alt="Character 4">
+              <h3>Ada Lovelace</h3>
+              <p>First computer programmer, known for her work on Charles Babbage's early mechanical general-purpose computer.</p>
+            </div>
+          </div>
         </section>
+      </div>
 
+      <!-- Footer -->
+      <section id="footer">
+        <ul class="icons">
+          <li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="" class="icon solid fa-envelope" onclick="copyText()"><span class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+      </section>
     </div>
 
     <!-- Scripts -->
@@ -111,17 +87,57 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        function copyText() {
-            const textToCopy = "informatics.history.sasa@gmail.com"; // 원하는 텍스트로 변경하세요.
-            navigator.clipboard.writeText(textToCopy)
-                .then(() => {
-                    alert("메일 주소가 복사되었습니다!");
-                })
-                .catch(err => {
-                    console.error("복사에 실패했습니다.", err);
-                });
-        }
+      function copyText() {
+        const textToCopy = "informatics.history.sasa@gmail.com";
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            alert("메일 주소가 복사되었습니다!");
+          })
+          .catch(err => {
+            console.error("복사에 실패했습니다.", err);
+          });
+      }
     </script>
-
-</body>
+  </body>
 </html>
+
+<style>
+  .character-cards {
+    padding: 2em;
+    text-align: center;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background: #f9f9f9;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .card h3 {
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+</style>
