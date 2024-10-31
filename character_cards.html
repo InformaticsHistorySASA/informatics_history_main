@@ -129,13 +129,13 @@
 
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
   }
 
   .card {
-    width: 200px;
-    height: 282px; /* Fixed aspect ratio of 1:1.414 */
+    width: 250px;
+    aspect-ratio: 1 / 1.414; /* Fixed aspect ratio of 1:1.414 */
     border: 1px solid #ccc;
     padding: 1em;
     border-radius: 8px;
