@@ -7,6 +7,13 @@
         "major_field":"SOFTWARE"
     },
     {
+        "year": "0",
+        "text": "카이사르 암호",
+        "image": "새 비트맵 이미지.bmp",
+        "link": "./single.html?id=caesar",
+        "major_field":"NETWORK & SECURITY"
+    },
+    {
         "year": "2010",
         "text": "테스트테스트",
         "image": "새 비트맵 이미지.bmp",
