@@ -7,6 +7,7 @@ if(urlSearch.has('id')){
         const subtitle = document.getElementById('post-subtitle');
         const author = document.getElementById('post-author');
         const date = document.getElementById('post-date');
+        const thumbnail = document.getElementById('post-thumbnail');
         const content = document.getElementById('post-content');
 
         tabtitle.innerHTML = data.title;
@@ -16,6 +17,15 @@ if(urlSearch.has('id')){
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
         content.innerHTML = data.content;
+
+        const iframes = document.getElementsByTagName("iframe");
+        iframes.forEach(iframe => {iframe.onload = function () {
+            iframe.setAttribute("scrolling", "no");
+            // iframe의 내부 문서 높이 가져오기
+            const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+            // iframe의 높이를 내부 콘텐츠 높이에 맞추기
+            iframe.style.height = iframeContentHeight + "px";
+        };})
     }
     // handleData({
     //     "id" : "caesar",
