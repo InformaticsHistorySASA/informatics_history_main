@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['clone', 'https://github.com/InformaticsHistorySASA/informatics_history_main.git']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', '.', 'gs://informatics_history_main']
