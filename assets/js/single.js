@@ -1,6 +1,6 @@
 const urlSearch = new URLSearchParams(location.search);
 if(urlSearch.has('id')){
-    postId = urlSearch.get('id');
+    const postId = urlSearch.get('id');
     function handleData(data){
         const tabtitle = document.getElementById('post-tabtitle');
         const title = document.getElementById('post-title');
@@ -17,14 +17,14 @@ if(urlSearch.has('id')){
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
         thumbnail.src = data.thumbnail;
-        content.innerHTML = `<iframe id="only-iframe" src=\"../posts/${postId}.html\" />`;
+        content.innerHTML = `<iframe id="only-iframe" src=\"/posts/${postId}.html\" />`;
 
         const iframe = document.getElementById("only-iframe");
         iframe.setAttribute("scrolling", "no");
-        // iframe의 내부 문서 높이 가져오기
-        const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
-        // iframe의 높이를 내부 콘텐츠 높이에 맞추기
-        iframe.style.height = iframeContentHeight + "px";
+        iframe.onload = function() {
+            const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+            iframe.style.height = iframeContentHeight + "px";
+        };
     }
     // handleData({
     //     "id" : "caesar",
