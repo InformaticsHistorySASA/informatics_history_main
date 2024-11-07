@@ -16,16 +16,15 @@ if(urlSearch.has('id')){
         author.innerHTML = data.author;
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
-        content.innerHTML = data.content;
+        thumbnail.src = data.thumbnail;
+        content.innerHTML = `<iframe id="only-iframe" src=\"../posts/${postId}.html\" />`;
 
-        const iframes = document.getElementsByTagName("iframe");
-        iframes.forEach(iframe => {iframe.onload = function () {
-            iframe.setAttribute("scrolling", "no");
-            // iframe의 내부 문서 높이 가져오기
-            const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
-            // iframe의 높이를 내부 콘텐츠 높이에 맞추기
-            iframe.style.height = iframeContentHeight + "px";
-        };})
+        const iframe = document.getElementById("only-iframe");
+        iframe.setAttribute("scrolling", "no");
+        // iframe의 내부 문서 높이 가져오기
+        const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+        // iframe의 높이를 내부 콘텐츠 높이에 맞추기
+        iframe.style.height = iframeContentHeight + "px";
     }
     // handleData({
     //     "id" : "caesar",
