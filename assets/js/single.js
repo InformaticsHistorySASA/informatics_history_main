@@ -17,7 +17,7 @@ if(urlSearch.has('id')){
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
         thumbnail.src = data.thumbnail;
-        content.innerHTML = `<iframe id="only-iframe" src=\"/posts/${postId}.html\" />`;
+        content.innerHTML = `<iframe id="only-iframe" src=\"../posts/${postId}.html\" />`;
 
         const iframe = document.getElementById("only-iframe");
         iframe.setAttribute("scrolling", "no");
@@ -34,7 +34,7 @@ if(urlSearch.has('id')){
     //     "date" : "2024-10-31",
     //     "content":"<iframe src=\"./heh.html\" />"
     // });
-    fetch(`/posts/${postId}.json`)
+    fetch(`../posts/${postId}.json`)
         .then(response => response.json())  // JSON 파일을 파싱
         .then(handleData)
         .catch(error => console.error('Error loading JSON:', error)); // 오류 처리

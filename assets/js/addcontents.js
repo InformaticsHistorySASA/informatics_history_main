@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('/posts/metaData.json')
+    fetch('../posts/metaData.json')
         .then(response => response.json())
         .then(data => {
             const main = document.getElementById('main'); // 메인 컨테이너
