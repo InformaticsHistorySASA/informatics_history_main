@@ -9,6 +9,7 @@
     <title>Character Cards - Future Imperfect by HTML5 UP</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 기존의 main.css를 유지하되, 추가된 스타일은 style 태그 내에 작성합니다. -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
       html, body {
@@ -33,33 +34,46 @@
       }
 
       .cards-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 2em;
       }
 
       .card {
+        width: 300px;
+        height: 420px; /* 가로 세로 비율 1:1.4 */
+        box-sizing: border-box;
         border: 1px solid #ccc;
         padding: 1em;
         border-radius: 8px;
         transition: box-shadow 0.3s ease;
         background: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .card img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
         border-radius: 8px;
       }
 
       .card h3 {
         margin-top: 1em;
         font-size: 1.2em;
+        flex-grow: 0;
+        flex-shrink: 0;
       }
 
       .card p {
         font-size: 0.9em;
         color: #666;
+        flex-grow: 1;
+        flex-shrink: 0;
       }
 
       .card:hover {
@@ -109,42 +123,42 @@
         <section class="character-cards">
           <div class="cards-container">
             <div class="card">
-              <img src="assets/images/person1.jpg" alt="Character 1">
+              <img src="https://raw.githubusercontent.com/InformaticsHistorySASA/informatics_history_main/main/images/turing.webp" alt="Alan Turing">
               <h3>Alan Turing</h3>
               <p>Father of modern computing, known for his work on theoretical computer science and artificial intelligence.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person2.jpg" alt="Character 2">
+              <img src="assets/images/person2.jpg" alt="Grace Hopper">
               <h3>Grace Hopper</h3>
               <p>Pioneer in computer programming, known for her work on developing the first compiler.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person3.jpg" alt="Character 3">
+              <img src="assets/images/person3.jpg" alt="Claude Shannon">
               <h3>Claude Shannon</h3>
               <p>Founder of information theory, which laid the foundation for digital communication.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person4.jpg" alt="Character 4">
+              <img src="assets/images/person4.jpg" alt="Ada Lovelace">
               <h3>Ada Lovelace</h3>
               <p>First computer programmer, known for her work on Charles Babbage's early mechanical general-purpose computer.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person5.jpg" alt="Character 5">
+              <img src="assets/images/person5.jpg" alt="John von Neumann">
               <h3>John von Neumann</h3>
               <p>Mathematician who made major contributions to computer architecture, including the concept of the stored-program computer.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person6.jpg" alt="Character 6">
+              <img src="assets/images/person6.jpg" alt="Donald Knuth">
               <h3>Donald Knuth</h3>
               <p>Author of "The Art of Computer Programming" and a pioneer in algorithm analysis.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person7.jpg" alt="Character 7">
+              <img src="assets/images/person7.jpg" alt="Barbara Liskov">
               <h3>Barbara Liskov</h3>
               <p>Noted for her work in programming languages and software engineering, and the Liskov substitution principle.</p>
             </div>
             <div class="card">
-              <img src="assets/images/person8.jpg" alt="Character 8">
+              <img src="assets/images/person8.jpg" alt="Tim Berners-Lee">
               <h3>Tim Berners-Lee</h3>
               <p>Inventor of the World Wide Web, which revolutionized how we access and share information globally.</p>
             </div>
