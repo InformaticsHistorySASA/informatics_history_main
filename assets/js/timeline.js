@@ -276,7 +276,7 @@ function loadAll_tester() {
 
 
 function loadAll_real() {
-    fetch('./contentData.json')
+    fetch('../contentData.json')
         .then(response => response.json())  // JSON 파일을 파싱
         .then(data => {
             timeline_data = data;
