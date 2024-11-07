@@ -175,7 +175,7 @@ function renderTimeLine(data){
             img_block.classList.add('image-block');
     
             const img = document.createElement('img');
-            img.src = item.image;
+            img.src = `/images/${item.image}`;
             img.alt = `Image for ${item.text}`;
 
             const p = document.createElement('p');
