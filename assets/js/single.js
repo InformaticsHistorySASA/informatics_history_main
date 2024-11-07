@@ -16,15 +16,15 @@ if(urlSearch.has('id')){
         author.innerHTML = data.author;
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
-        thumbnail.src = data.thumbnail;
+        thumbnail.src = `../images/${data.thumbnail}`;
         content.innerHTML = `<iframe id="only-iframe" src=\"../posts/${postId}.html\" />`;
 
         const iframe = document.getElementById("only-iframe");
-        iframe.setAttribute("scrolling", "no");
         iframe.onload = function() {
             const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
             iframe.style.height = iframeContentHeight + "px";
         };
+        iframe.setAttribute("scrolling", "no");
     }
     // handleData({
     //     "id" : "caesar",
@@ -41,6 +41,6 @@ if(urlSearch.has('id')){
 }
 else{
     redirect = document.createElement('a');
-    redirect.href = "./index.html";
+    redirect.href = "../";
     redirect.click();
 }
