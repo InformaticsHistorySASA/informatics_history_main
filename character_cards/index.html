@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body class="character-cards is-preload">
-
     <!-- Wrapper -->
     <div id="wrapper">
-
       <!-- Header -->
       <header id="header">
         <h1><a href="../index.html">세계를 움직이는 정보과학의 역사</a></h1>
@@ -50,6 +48,7 @@
               <h3>Alan Turing</h3>
               <p>Father of modern computing, known for his work on theoretical computer science and artificial intelligence.</p>
             </div>
+            <!-- 다른 카드들도 동일하게 수정 -->
             <div class="card">
               <img src="../assets/images/person2.jpg" alt="Character 2">
               <h3>Grace Hopper</h3>
@@ -94,7 +93,7 @@
         <ul class="icons">
           <li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
           <li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="" class="icon solid fa-envelope" onclick="copyText()"><span class="label">Email</span></a></li>
+          <li><a href="#" class="icon solid fa-envelope" onclick="copyText()"><span class="label">Email</span></a></li>
         </ul>
         <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
       </footer>
@@ -120,55 +119,3 @@
     </script>
   </body>
 </html>
-
-<style>
-  .character-cards {
-    padding: 2em;
-    text-align: center;
-  }
-
-  .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em;
-  }
-
-  .card {
-    border: 1px solid #ccc;
-    padding: 1em;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
-    background: #f9f9f9;
-  }
-
-  .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .card h3 {
-    margin-top: 1em;
-    font-size: 1.2em;
-  }
-
-  .card p {
-    font-size: 0.9em;
-    color: #666;
-  }
-
-  .card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-
-  #footer {
-    margin-top: 2em;
-    padding-top: 2em;
-    border-top: 1px solid #eaeaea;
-    text-align: center;
-    width: 100%;
-    background-color: #fff;
-    position: relative;
-    bottom: 0;
-  }
-</style>
