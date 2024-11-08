@@ -20,11 +20,15 @@ if(urlSearch.has('id')){
         content.innerHTML = `<iframe id="only-iframe" src=\"../posts/${postId}.html\" />`;
 
         const iframe = document.getElementById("only-iframe");
+
         iframe.onload = function() {
-            const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
-            iframe.style.height = iframeContentHeight + "px";
-        };
-        iframe.setAttribute("scrolling", "no");
+            try {
+                const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight + 100;
+                iframe.style.height = iframeContentHeight + "px";
+            } catch (error) {
+                console.error("Cross-origin access issue:", error);
+            }
+        };  
     }
     // handleData({
     //     "id" : "caesar",
@@ -32,7 +36,7 @@ if(urlSearch.has('id')){
     //     "subtitle" : "카이사르 암호 복호화",
     //     "author" : "박제준",
     //     "date" : "2024-10-31",
-    //     "content":"<iframe src=\"./heh.html\" />"
+    //     "content":`<iframe id="only-iframe" src=\"../posts/caesar.html\" />`
     // });
     fetch(`../posts/${postId}.json`)
         .then(response => response.json())  // JSON 파일을 파싱
