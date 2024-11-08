@@ -175,7 +175,7 @@ function renderTimeLine(data){
             img_block.classList.add('image-block');
     
             const img = document.createElement('img');
-            img.src = `../images/${item.image}`;
+            img.src = `./images/${item.image}`;
             img.alt = `Image for ${item.text}`;
 
             const p = document.createElement('p');
@@ -276,7 +276,7 @@ function loadAll_tester() {
 
 
 function loadAll_real() {
-    fetch('../contentData.json')
+    fetch('./contentData.json')
         .then(response => response.json())  // JSON 파일을 파싱
         .then(data => {
             timeline_data = data;

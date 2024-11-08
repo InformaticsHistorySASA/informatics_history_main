@@ -16,8 +16,8 @@ if(urlSearch.has('id')){
         author.innerHTML = data.author;
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
-        thumbnail.src = `../images/${data.thumbnail}`;
-        content.innerHTML = `<iframe id="only-iframe" src=\"../posts/${postId}.html\" />`;
+        thumbnail.src = `./images/${data.thumbnail}`;
+        content.innerHTML = `<iframe id="only-iframe" src=\"./posts/${postId}.html\" />`;
 
         const iframe = document.getElementById("only-iframe");
 
@@ -36,15 +36,15 @@ if(urlSearch.has('id')){
     //     "subtitle" : "카이사르 암호 복호화",
     //     "author" : "박제준",
     //     "date" : "2024-10-31",
-    //     "content":`<iframe id="only-iframe" src=\"../posts/caesar.html\" />`
+    //     "content":`<iframe id="only-iframe" src=\"./posts/caesar.html\" />`
     // });
-    fetch(`../posts/${postId}.json`)
+    fetch(`./posts/${postId}.json`)
         .then(response => response.json())  // JSON 파일을 파싱
         .then(handleData)
         .catch(error => console.error('Error loading JSON:', error)); // 오류 처리
 }
 else{
     redirect = document.createElement('a');
-    redirect.href = "../";
+    redirect.href = "./";
     redirect.click();
 }
