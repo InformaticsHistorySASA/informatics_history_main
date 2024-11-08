@@ -3,21 +3,21 @@
         "year": "-300",
         "text": "최초의 알고리즘",
         "image": "새 비트맵 이미지.bmp",
-        "link": "../single",
+        "link": "./single",
         "major_field":"SOFTWARE"
     },
     {
         "year": "0",
         "text": "카이사르 암호",
         "image": "새 비트맵 이미지.bmp",
-        "link": "../single?id=caesar",
+        "link": "./single?id=caesar",
         "major_field":"NETWORK & SECURITY"
     },
     {
         "year": "2010",
         "text": "테스트테스트",
         "image": "새 비트맵 이미지.bmp",
-        "link": "../single",
+        "link": "./single",
         "major_field":"HARDWARE"
     },
     {
