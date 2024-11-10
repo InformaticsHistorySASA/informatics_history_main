@@ -175,7 +175,7 @@ function renderTimeLine(data){
             img_block.classList.add('image-block');
     
             const img = document.createElement('img');
-            img.src = `./images/${item.image}`;
+            img.src = `${item.image}`;
             img.alt = `Image for ${item.text}`;
 
             const p = document.createElement('p');
@@ -291,7 +291,7 @@ const loadAll = loadAll_real;
 let activated_major_fields = new Set(['HARDWARE', 'SOFTWARE', 'NETWORK & SECURITY', 'DATA & AI']), activated_minor_fields = new Set;
 const majorButtons = document.querySelectorAll('.timeline-menu-button');
 function field_selector(){
-    if(activated_major_fields.size==0 && activated_minor_fields.size==0) return [{"year": 0, "text": "Nothing rendered", "image": "./images/turing.webp"}];
+    if(activated_major_fields.size==0 && activated_minor_fields.size==0) return [{"year": 0, "text": "Nothing rendered", "image": "./user_files/turing.webp"}];
     // 필터링 조건 함수
     function Filter(item) {
         if(activated_major_fields.has(item.major_field)) return true;
