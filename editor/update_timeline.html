@@ -56,6 +56,9 @@
             }
 
             // 이미지 링크가 유효한 URL인지 검사
+            if(imageLink[0]=='.'){
+                imageLink = `https://storage.googleapis.com/informatics_history_main${imageLink.substr(1)}`
+            }
             if (!isValidURL(imageLink)) {
                 alert("유효한 이미지 링크를 입력하세요.");
                 return;

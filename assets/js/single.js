@@ -16,7 +16,7 @@ if(urlSearch.has('id')){
         author.innerHTML = data.author;
         date.setAttribute('datetime', data.date);
         date.innerHTML = data.date;
-        thumbnail.src = `./images/${data.thumbnail}`;
+        thumbnail.src = `${data.thumbnail}`;
         content.innerHTML = `<iframe id="only-iframe" src=\"./posts/${postId}.html\" />`;
 
         const iframe = document.getElementById("only-iframe");
