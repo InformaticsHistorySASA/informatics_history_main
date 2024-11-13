@@ -201,7 +201,18 @@
             if(!urlSearch.has('id')) return;
             const postId = urlSearch.get('id');
 
-            const content = quill.root.innerHTML;
+            const content = `
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카이사르 암호 복호화</title>
+</head>
+<body>
+    ${quill.root.innerHTML}
+</body>
+</html>`;
             console.log(content);  // 작성된 HTML을 서버로 보낼 수 있음
             // 서버로 전송하는 로직을 여기에 추가
             const blob = new Blob([content], { type: 'text/html' });
