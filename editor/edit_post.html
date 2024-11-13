@@ -212,7 +212,7 @@
             link.click();
 
             const formData = new FormData();
-            formData.append('file', blob, `../posts/${postId}.html`);
+            formData.append('file', blob, `${postId}.html`);
 
             try {
                 // Google Cloud Function 호출
