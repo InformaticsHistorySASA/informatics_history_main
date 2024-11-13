@@ -109,7 +109,7 @@
                     fetch(json_url, { method: 'GET'})
                     .then(response => {
                         if (response.ok) {
-                            return response.text();
+                            return response.json();
                         } else {
                             console.error('Error:', response.status);
                         }
