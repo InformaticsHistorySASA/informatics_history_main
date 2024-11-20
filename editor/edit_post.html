@@ -103,7 +103,8 @@
                     [{ 'align': [] }],
                     ['link', 'image', 'video'],                        // 링크, 이미지, 동영상
                     ['clean']                                         // 서식 지우기
-                ]
+                ],
+                linkTooltip: true
             }
         });
         function getBodyFromHTML(htmlText){
@@ -238,8 +239,8 @@
 
             let content = quill.root.innerHTML;
 
-            // `<!DOCTYPE html>`이 포함되지 않은 경우 전체 HTML 구조로 감싸기
-            if (!content.substr(0,20).includes('<!DOCTYPE html>')) {
+            // `<html`이 포함되지 않은 경우 전체 HTML 구조로 감싸기
+            if (!content.includes('<html')) {
             content = `
 <!DOCTYPE html>
 <html lang="ko">
@@ -286,37 +287,38 @@
         window.onload = loadPost;
     </script>
     <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
         const uploadContainer = document.getElementById('uploadContainer');
-    const fileInput = document.getElementById('fileInput');
+        const fileInput = document.getElementById('fileInput');
+        // 클릭으로 파일 선택
+        uploadContainer.addEventListener('click', () => {
+            fileInput.click();
+        });
 
-    // 클릭으로 파일 선택
-    uploadContainer.addEventListener('click', () => {
-        fileInput.click();
+        // 드래그 앤 드롭 이벤트
+        uploadContainer.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadContainer.classList.add('dragover');
+        });
+
+        uploadContainer.addEventListener('dragleave', () => {
+            uploadContainer.classList.remove('dragover');
+        });
+
+        uploadContainer.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadContainer.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        // 파일 선택 시 이벤트
+        fileInput.addEventListener('change', () => {
+            const files = fileInput.files;
+            handleFiles(files);
+        });
     });
-
-    // 드래그 앤 드롭 이벤트
-    uploadContainer.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        uploadContainer.classList.add('dragover');
-    });
-
-    uploadContainer.addEventListener('dragleave', () => {
-        uploadContainer.classList.remove('dragover');
-    });
-
-    uploadContainer.addEventListener('drop', (e) => {
-        e.preventDefault();
-        uploadContainer.classList.remove('dragover');
-        const files = e.dataTransfer.files;
-        handleFiles(files);
-    });
-
-    // 파일 선택 시 이벤트
-    fileInput.addEventListener('change', () => {
-        const files = fileInput.files;
-        handleFiles(files);
-    });
-
     // 파일 처리 함수
     async function handleFiles(files) {
         if (files.length > 0) {
@@ -326,7 +328,9 @@
     }
     async function uploadFile(file) {
             const formData = new FormData();
-            formData.append('file', file);
+            const urlSearch = new URLSearchParams(location.search);
+            if(urlSearch.has('id')) formData.append('file', file, `${urlSearch.get('id')}.html`);
+            else return;
         
             try {
                 // Google Cloud Function 호출
@@ -343,6 +347,7 @@
                     alert(`Error: ${result.error}`);
                 }
             } catch (error) {
+                console.error('Server response:', await response.text());
                 alert('Failed to upload file: ' + error.message);
             }
         }
