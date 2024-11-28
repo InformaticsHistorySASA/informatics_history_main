@@ -3155,10 +3155,12 @@ input, select, textarea {
 			white-space: nowrap;
 		}
 
-			#header h1 a {
-				font-size: 0.7em;
-			}
-
+		#header h1 a {
+			font-size: 0.7em;
+		}
+		::-webkit-scrollbar{
+			display:none;
+		}
 		#header .links {
 			-moz-flex: 1;
 			-webkit-flex: 1;
@@ -3168,7 +3170,9 @@ input, select, textarea {
 			height: inherit;
 			line-height: inherit;
 			margin-left: 1.5em;
-			overflow: hidden;
+			overflow-x:scroll;
+			overflow-y:hidden;
+			white-space: nowrap;
 			padding-left: 1.5em;
 		}
 
@@ -3288,9 +3292,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#header .links {
+			/* #header .links {
 				display: none;
-			}
+			} */
 
 		}
 
@@ -3305,9 +3309,9 @@ input, select, textarea {
 					padding: 0 0 0 1em;
 				}
 
-				#header .main .search {
+				/* #header .main .search {
 					display: none;
-				}
+				} */
 
 		}
 
