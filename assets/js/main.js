@@ -93,7 +93,9 @@
 			});
 
 })(jQuery);
-
+document.addEventListener('DOMContentLoaded', () => {
+    setLanguage('ko');
+});
 function Search(event)
 {
 	if (event.key === "Enter") {
