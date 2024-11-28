@@ -1,7 +1,7 @@
 let allPosts = []; // 전체 데이터를 저장할 변수
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('./posts/postmetadata.json')
+    fetch('./posts/postsmetadata.json')
     .then(response => response.json())
         .then(data => {
             allPosts = data.sort((a, b) => a.year - b.year); // JSON 데이터 정렬 후 저장
