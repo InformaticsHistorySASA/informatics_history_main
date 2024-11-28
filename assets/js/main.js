@@ -93,3 +93,20 @@
 			});
 
 })(jQuery);
+
+function Search(event)
+{
+	if (event.key === "Enter") {
+		const isContentsPage=window.location.pathname.endsWith('contents.html');
+		const searchInput = document.getElementById('searchInput');
+		const query = searchInput.value.trim();
+		if (query) {
+			if (!isContentsPage) {
+				window.location.replace(`contents.html?query=${encodeURIComponent(query)}`);
+			} else {
+				window.location.href = `?query=${encodeURIComponent(query)}`;
+			}
+		}
+		else window.location.href="contents.html";
+	}
+}
