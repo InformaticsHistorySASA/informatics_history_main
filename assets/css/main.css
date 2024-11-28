@@ -6,6 +6,19 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* 모바일에서 메뉴 바 보이기 */
+@media only screen and (max-width: 768px) {
+    nav.links ul {
+        display: block; /* 메뉴 보이기 */
+    }
+    nav.links ul li {
+        display: block; /* 세로 정렬 */
+        margin: 5px 0; /* 간격 추가 */
+    }
+    nav.main ul {
+        display: block;
+    }
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
