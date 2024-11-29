@@ -37,12 +37,14 @@
     overflow: hidden; 
     /* 내용이 넘칠 경우 숨김 */
 }
-.card:hover .card-front{
+.card:hover .card-front,
+.card:focus .card-front{
     transform: rotateY(-180deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.card:hover .card-back{
+.card:hover .card-back,
+.card:focus .card-back{
     transform: rotateY(0deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 
