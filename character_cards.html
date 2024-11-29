@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
   Future Imperfect by HTML5 UP
   html5up.net | @ajlkn
@@ -8,16 +8,12 @@
   <head>
     <title>Character Cards - Future Imperfect by HTML5 UP</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!-- 기존의 main.css를 유지하되, 추가된 스타일은 style 태그 내에 작성합니다. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
       #wrapper {
         display: flex;
         flex-direction: column;
@@ -27,7 +23,6 @@
       #main {
         flex: 1;
       }
-
       .character-cards {
         padding: 2em;
         text-align: center;
@@ -90,90 +85,177 @@
       }
     </style>
   </head>
-  <body class="character-cards is-preload">
+  <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
-      <header id="header">
+       <header id="header">
         <h1><a href=".">세계를 움직이는 정보과학의 역사</a></h1>
-	<nav class="links">
-		<ul>
-			<li><a href="./timeline.html">TIMELINE</a></li>
-			<li><a href="./contents.html">CONTENTS</a></li>
-			<li><a href="./character_cards.html">CHARACTER CARDS</a></li>
-			<li><a href="./editor_page.html">EDITOR PAGE</a></li>
-			<li><a href="./developers.html">DEVELOPERS</a></li>
-		</ul>
-	</nav>
+        <nav class="links">
+          <ul>
+            <li><a href="./timeline.html">TIMELINE</a></li>
+            <li><a href="./contents.html">CONTENTS</a></li>
+            <li><a href="./character_cards.html">CHARACTER CARDS</a></li>
+            <li><a href="./editor_page.html">EDITOR PAGE</a></li>
+            <li><a href="./developers.html">DEVELOPERS</a></li>
+          </ul>
+        </nav>
         <nav class="main">
           <ul>
             <li class="search">
               <a class="fa-search" href="#search">Search</a>
-		<form id="search" method="get" action="javascript:void(0);">
-		  <input type="text" id="searchInput" placeholder="Search" onkeypress="Search(event)" />
-		</form>
+              <form id="search" method="get" action="javascript:void(0);">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search"
+                  onkeypress="Search(event, 'searchInput')"
+                />
+              </form>
+            </li>
+            <li class="menu">
+              <a class="fa-bars" href="#menu">Menu</a>
             </li>
           </ul>
         </nav>
+		
+        <section id="menu">
+          <!-- Search -->
+          <section id="Searchsection">
+            <form class="Search" method="get" action="javascript:void(0);">
+              <input
+                type="text"
+                id="SearchInput"
+                placeholder="Search"
+                onkeypress="Search(event,'SearchInput')"
+              />
+            </form>
+          </section>
+
+          <!-- Links -->
+          <section>
+            <ul class="links">
+              <li>
+                <a href="./timeline.html"><h3>TIMELINE</h3></a>
+              </li>
+              <li>
+                <a href="./contents.html"><h3>CONTENTS</h3></a>
+              </li>
+              <li>
+                <a href="./character_cards.html"><h3>CHARACTER CARDS</h3></a>
+              </li>
+              <li>
+                <a href="./editor_page.html"><h3>EDITOR PAGE</h3></a>
+              </li>
+              <li>
+                <a href="./developers.html"><h3>DEVELOPERS</h3></a>
+              </li>
+            </ul>
+          </section>
+        </section>
       </header>
 
       <!-- Main -->
-      <div id="main">
+      <div id="main" class="character-cards">
         <!-- Character Cards -->
-        <section class="character-cards">
+        <div class="character-cards">
           <div class="cards-container">
             <div class="card">
-              <img src="character_cards_images/turing.webp" alt="Alan Turing">
+              <img src="character_cards_images/turing.webp" alt="Alan Turing" />
               <h3>Alan Turing</h3>
-              <p>튜링은 아주 유명한 정보과학의 아빠이자 유명한 게이고 독사과를 먹어 자살한것으로 유명함</p>
+              <p>
+                튜링은 아주 유명한 정보과학의 아빠이자 유명한 게이고 독사과를
+                먹어 자살한것으로 유명함
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person2.jpg" alt="Grace Hopper">
+              <img src="./images/person2.jpg" alt="Grace Hopper" />
               <h3>Grace Hopper</h3>
-              <p>Pioneer in computer programming, known for her work on developing the first compiler.</p>
+              <p>
+                Pioneer in computer programming, known for her work on
+                developing the first compiler.
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person3.jpg" alt="Claude Shannon">
+              <img src="./images/person3.jpg" alt="Claude Shannon" />
               <h3>Claude Shannon</h3>
-              <p>Founder of information theory, which laid the foundation for digital communication.</p>
+              <p>
+                Founder of information theory, which laid the foundation for
+                digital communication.
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person4.jpg" alt="Ada Lovelace">
+              <img src="./images/person4.jpg" alt="Ada Lovelace" />
               <h3>Ada Lovelace</h3>
-              <p>First computer programmer, known for her work on Charles Babbage's early mechanical general-purpose computer.</p>
+              <p>
+                First computer programmer, known for her work on Charles
+                Babbage's early mechanical general-purpose computer.
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person5.jpg" alt="John von Neumann">
+              <img src="./images/person5.jpg" alt="John von Neumann" />
               <h3>John von Neumann</h3>
-              <p>Mathematician who made major contributions to computer architecture, including the concept of the stored-program computer.</p>
+              <p>
+                Mathematician who made major contributions to computer
+                architecture, including the concept of the stored-program
+                computer.
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person6.jpg" alt="Donald Knuth">
+              <img src="./images/person6.jpg" alt="Donald Knuth" />
               <h3>Donald Knuth</h3>
-              <p>Author of "The Art of Computer Programming" and a pioneer in algorithm analysis.</p>
+              <p>
+                Author of "The Art of Computer Programming" and a pioneer in
+                algorithm analysis.
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person7.jpg" alt="Barbara Liskov">
+              <img src="./images/person7.jpg" alt="Barbara Liskov" />
               <h3>Barbara Liskov</h3>
-              <p>Noted for her work in programming languages and software engineering, and the Liskov substitution principle.</p>
+              <p>
+                Noted for her work in programming languages and software
+                engineering, and the Liskov substitution principle.
+              </p>
             </div>
             <div class="card">
-              <img src="./images/person8.jpg" alt="Tim Berners-Lee">
+              <img src="./images/person8.jpg" alt="Tim Berners-Lee" />
               <h3>Tim Berners-Lee</h3>
-              <p>Inventor of the World Wide Web, which revolutionized how we access and share information globally.</p>
+              <p>
+                Inventor of the World Wide Web, which revolutionized how we
+                access and share information globally.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
       </div>
 
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
-          <li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon solid fa-envelope" onclick="copyText()"><span class="label">Email</span></a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/SASABamboo"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/sasa.sanarae/"
+              class="icon brands fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid fa-envelope" onclick="copyText()"
+              ><span class="label">Email</span></a
+            >
+          </li>
         </ul>
-        <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+        <p class="copyright">
+          &copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images:
+          <a href="http://unsplash.com">Unsplash</a>.
+        </p>
       </footer>
     </div>
 
@@ -185,13 +267,14 @@
     <script src="./assets/js/main.js"></script>
     <script>
       function copyText() {
-        const textToCopy = "informatics.history.sasa@gmail.com";
-        navigator.clipboard.writeText(textToCopy)
+        const textToCopy = 'informatics.history.sasa@gmail.com';
+        navigator.clipboard
+          .writeText(textToCopy)
           .then(() => {
-            alert("메일 주소가 복사되었습니다!");
+            alert('메일 주소가 복사되었습니다!');
           })
-          .catch(err => {
-            console.error("복사에 실패했습니다.", err);
+          .catch((err) => {
+            console.error('복사에 실패했습니다.', err);
           });
       }
     </script>
