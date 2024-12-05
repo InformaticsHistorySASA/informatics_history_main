@@ -279,6 +279,10 @@ function loadAll_real() {
     fetch('./contentData.json')
         .then(response => response.json())  // JSON 파일을 파싱
         .then(data => {
+            // 데이터 정렬: year를 기준으로 오름차순 정렬
+            data.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+
+            // 정렬된 데이터를 타임라인에 렌더링
             timeline_data = data;
             renderTimeLine(data);
         })
