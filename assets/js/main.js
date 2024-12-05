@@ -95,11 +95,11 @@
 })(jQuery);
 
 
-function Search(event)
+function Search(event,id)
 {
 	if (event.key === "Enter") {
 		const isContentsPage=window.location.pathname.endsWith('contents.html');
-		const searchInput = document.getElementById('searchInput');
+		const searchInput = document.getElementById(id);
 		const query = searchInput.value.trim();
 		if (query) {
 			if (!isContentsPage) {
