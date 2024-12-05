@@ -14,13 +14,6 @@
     "major_field": "SOFTWARE"
   },
   {
-    "year": "1836",
-    "text": "\ubaa8\uc2a4\ubd80\ud638\uc758 \ub4f1\uc7a5",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/unnamed.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1842",
     "text": "The First Computer Program",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/\ud504\ub85c\uadf8\ub7a8.jpeg",
@@ -133,13 +126,6 @@
     "major_field": "HARDWARE"
   },
   {
-    "year": "1960",
-    "text": "물리적 해킹",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/hacking.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1961",
     "text": "MIT CTSS\uac1c\ubc1c",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/MITCTSS.webp",
@@ -155,13 +141,6 @@
   },
   {
     "year": "1965",
-    "text": "\ucd5c\ucd08\uc758 \uc7a5\uac70\ub9ac \ucef4\ud4e8\ud130 \ud1b5\uc2e0",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/thefirstlongdistancecomputercommunication.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "1965",
     "text": "Moore\u2019s Law",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/1965.png",
     "link": "",
@@ -173,20 +152,6 @@
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/ATNT.png",
     "link": "",
     "major_field": "SOFTWARE"
-  },
-  {
-    "year": "1969",
-    "text": "Arpanet\uc758 \ub4f1\uc7a5",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Arpanet.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "1969",
-    "text": "\ud328\ud0b7 \uc2a4\uc704\uce6d \ub124\ud2b8\uc6cc\ud06c vs \ud68c\uc120 \uc2a4\uc704\uce6d \ub124\ud2b8\uc6cc\ud06c",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/packet_switching.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "1969",
@@ -210,13 +175,6 @@
     "major_field": "HARDWARE"
   },
   {
-    "year": "1971",
-    "text": "크리퍼 & 리퍼",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/creeper.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1972",
     "text": "C \uc5b8\uc5b4",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/C_Programming_Language.png",
@@ -229,13 +187,6 @@
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/UNIX_C.jpeg",
     "link": "",
     "major_field": "SOFTWARE"
-  },
-  {
-    "year": "1974",
-    "text": "\uc774\ub354\ub137 \uac1c\ubc1c",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/\uc774\ub354\ub137.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "1974",
@@ -259,20 +210,6 @@
     "major_field": "SOFTWARE"
   },
   {
-    "year": "1977",
-    "text": "RSA",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/RSA.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "1977",
-    "text": "DES 개발",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/DES.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1978",
     "text": "SQL \uc5b8\uc5b4",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/SQL.png",
@@ -287,25 +224,11 @@
     "major_field": "HARDWARE"
   },
   {
-    "year": "1979",
-    "text": "디 아크 해킹",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/DEARChack.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1981",
     "text": "IBM PC\uc5d0 MS-DOS \ub3c4\uc785",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/MSDOS.svg",
     "link": "",
     "major_field": "SOFTWARE"
-  },
-  {
-    "year": "1981",
-    "text": "TCP/IP",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/TCPIP.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "1981",
@@ -329,13 +252,6 @@
     "major_field": "SOFTWARE"
   },
   {
-    "year": "1983",
-    "text": "MILNET",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/MILNET.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1984",
     "text": "Mac OS \ucd08\uae30 \ubc84\uc804",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/MACOS_logo.svg",
@@ -357,13 +273,6 @@
     "major_field": "SOFTWARE"
   },
   {
-    "year": "1986",
-    "text": "NSFNET\uc758 \uc131\uc7a5",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/NSFNET.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1987",
     "text": "First VGA",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/1987.jpg",
@@ -371,32 +280,11 @@
     "major_field": "HARDWARE"
   },
   {
-    "year": "1987",
-    "text": "비엔나 바이러스",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Viennavirus.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "1988",
-    "text": "상업용 바이러스 백신 소프트웨어",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/vaccine.jpg",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "1989",
     "text": "Intel - i860",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/1989.jpg",
     "link": "",
     "major_field": "HARDWARE"
-  },
-  {
-    "year": "1990",
-    "text": "\uc6d4\ub4dc\uc640\uc774\ub4dc\uc6f9\uc758 \ub4f1\uc7a5",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/www.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "1991",
@@ -456,13 +344,6 @@
   },
   {
     "year": "1997",
-    "text": "\uc640\uc774\ud30c\uc774 \ubc1c\uba85",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/wifi.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "1997",
     "text": "NVIDIA - Riva 128",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/1997.jpg",
     "link": "",
@@ -491,31 +372,10 @@
   },
   {
     "year": "2000",
-    "text": "\uc591\uc790 \ub124\ud2b8\uc6cc\ud06c",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/\uc591\uc790\ub124\ud2b8\uc6cc\ud06c.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "2000",
     "text": "ATI Radeon 7200",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/2000.jpg",
     "link": "",
     "major_field": "HARDWARE"
-  },
-  {
-    "year": "2000",
-    "text": "Freenet의 탄생",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Freenet.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
-    "year": "2000",
-    "text": "ILOVEYOU 바이러스",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/ILOVEYOU.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "2001",
@@ -537,13 +397,6 @@
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/2001.png",
     "link": "",
     "major_field": "HARDWARE"
-  },
-  {
-    "year": "2002",
-    "text": "Tor 브라우저의 개발",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/TOR.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "2004",
@@ -588,13 +441,6 @@
     "major_field": "SOFTWARE"
   },
   {
-    "year": "2009",
-    "text": "ICANN \uc815\ucc45 \ubcc0\uacbd",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/ICANN.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "2011",
     "text": "Chrome OS \ucd9c\uc2dc",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/chromeOS.webp",
@@ -602,25 +448,11 @@
     "major_field": "SOFTWARE"
   },
   {
-    "year": "2011",
-    "text": "실크로드",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/SilkRoad.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
-  },
-  {
     "year": "2014",
     "text": "Swift \uc5b8\uc5b4",
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/Swift_logo.png",
     "link": "",
     "major_field": "SOFTWARE"
-  },
-  {
-    "year": "2014",
-    "text": "AlphaBay",
-    "image": "https://storage.googleapis.com/informatics_history_main/user_files/AlphaBay.png",
-    "link": "",
-    "major_field": "NETWORK & SECURITY"
   },
   {
     "year": "2015",
@@ -663,5 +495,159 @@
     "image": "https://storage.googleapis.com/informatics_history_main/user_files/Windows11.webp",
     "link": "",
     "major_field": "SOFTWARE"
+  },
+  {
+    "year": "1836",
+    "text": "모스부호의 등장",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/unnamed.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=morsecode",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1960",
+    "text": "물리적 해킹",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/hacking.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=hacking",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1965",
+    "text": "최초의 장거리 컴퓨터 통신",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/thefirstlongdistancecomputercommunication.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=thefirstlongdistancecomputercommunication",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1969",
+    "text": "Arpanet의 등장",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Arpanet.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=Arpanet",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1971",
+    "text": "크리퍼 & 리퍼",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/creeper.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=creeper",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1974",
+    "text": "이더넷 개발",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Ethernet.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=Ethernet",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1977",
+    "text": "DES 개발",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/DES.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=DES",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1979",
+    "text": "디 아크 해킹",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/DEARChack.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=DEARChack",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1981",
+    "text": "TCP/IP",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/TCPIP.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=TCPIP",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1983",
+    "text": "MILNET",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/MILNET.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=MILNET",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1986",
+    "text": "NSFNET의 성장",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/NSFNET.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=NSFNET",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1987",
+    "text": "비엔나 바이러스",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Viennavirus.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=Viennavirus",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1988",
+    "text": "상업용 바이러스 백신 소프트웨어",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/vaccine.jpg",
+    "link": "https://informaticshistorysasa.com/single.html?id=vaccine",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1990",
+    "text": "월드와이드웹의 등장",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/www.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=Www",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "1997",
+    "text": "와이파이 발명",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/wifi.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=wifi",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2000",
+    "text": "양자 네트워크",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/quantumnetwork.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=quantumnetwork",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2000",
+    "text": "ILOVEYOU 바이러스",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/ILOVEYOU.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=ILOVEYOU",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2009",
+    "text": "ICANN 정책 변경",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/ICANN.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=ICANN",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2000",
+    "text": "Freenet의 탄생",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/Freenet.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=Freenet",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2002",
+    "text": "Tor 브라우저의 개발",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/TOR.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=TOR",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2011",
+    "text": "실크로드",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/SilkRoad.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=SilkRoad",
+    "major_field": "NETWORK & SECURITY"
+  },
+  {
+    "year": "2014",
+    "text": "AlphaBay",
+    "image": "https://storage.googleapis.com/informatics_history_main/user_files/AlphaBay.png",
+    "link": "https://informaticshistorysasa.com/single.html?id=AlphaBay",
+    "major_field": "NETWORK & SECURITY"
   }
 ]
