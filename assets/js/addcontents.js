@@ -1,7 +1,7 @@
 let allPosts = []; // 전체 데이터를 저장할 변수
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('./posts/postsmetadata.json')
+    fetch('./contentData.json')
     .then(response => response.json())
         .then(data => {
             allPosts = data.sort((a, b) => a.year - b.year); // JSON 데이터 정렬 후 저장
@@ -27,19 +27,30 @@ function displayPosts(posts) {
 
         const titleDiv = document.createElement('div');
         titleDiv.classList.add('title');
+        const clickbox = document.createElement('a');
 
+        clickbox.classList.add('content-clickbox');
         const h2 = document.createElement('h2');
         const link = document.createElement('a');
-        link.href = item.link;
-        link.textContent = item.year;
+
+        clickbox.href = item.link;
+        if(item.year<0)
+        {
+            link.textContent = `BC ${-item.year}`;
+        }
+        else
+        {
+            link.textContent = item.year;
+        }
         h2.appendChild(link);
 
         const p = document.createElement('p');
         p.textContent = item.text;
-
+        article.appendChild(clickbox);
+        clickbox.appendChild(titleDiv);
         titleDiv.appendChild(h2);
         titleDiv.appendChild(p);
-        article.appendChild(titleDiv);
+        clickbox.appendChild(titleDiv);
         main.appendChild(article);
     });
 }
@@ -49,6 +60,7 @@ function performSearch(query) {
     const filteredPosts = allPosts.filter(item => {
         return item.year.toLowerCase().includes(query.toLowerCase()) ||
                item.text.toLowerCase().includes(query.toLowerCase()) ||
+               item.major_field.toLowerCase().includes(query.toLowerCase()) ||
                (item.tag && item.tag.toLowerCase().includes(query.toLowerCase())); // tag 속성 추가
     });
     displayPosts(filteredPosts); // 필터링된 결과 표시
