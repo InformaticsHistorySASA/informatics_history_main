@@ -1,0 +1,11 @@
+#post-content {
+    position: relative;
+    width: 100%;
+}
+#post-content iframe {
+    margin: auto;
+    width: 100%;
+}
+.vsc-initialized{
+    text-align : justify;
+}

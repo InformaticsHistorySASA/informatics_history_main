@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Editor Page - 세상을 움직이는 정보과학의 역사</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./assets/css/main.css"/>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href=".">세계를 움직이는 정보과학의 역사</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="./timeline.html">TIMELINE</a></li>
+								<li><a href="./contents.html">CONTENTS</a></li>
+								<li><a href="./character_cards.html">CHARACTER CARDS</a></li>
+								<li><a href="./editor_page.html">EDITOR PAGE</a></li>
+								<li><a href="./developers.html">DEVELOPERS</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#" onsubmit="return false;">
+										<input type="text" name="query" id="searchInput" placeholder="Search" />
+									</form>
+								</li>
+			
+							</ul>
+						</nav>
+					</header>
+
+
+				<!-- Main -->
+				<div id="main">
+					<a href="./editor/upload_file.html" target="_blank">새 파일 업로드</a>
+					<br><br>
+					<a href="./editor/update_timeline.html" target="_blank">연표에 새 사건 넣기</a>
+					<br><br>
+					<a href="./editor/edit_post.html" target="_blank">게시글 작성</a>
+					<!-- Post -->
+				</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="" class="icon solid fa-envelope", onclick="copyText()"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="./assets/js/jquery.min.js"></script>
+			<script src="./assets/js/browser.min.js"></script>
+			<script src="./assets/js/breakpoints.min.js"></script>
+			<script src="./assets/js/util.js"></script>
+			<script src="./assets/js/main.js"></script>
+			<script>
+				function copyText() {
+					const textToCopy = "informatics.history.sasa@gmail.com"; // 원하는 텍스트로 변경하세요.
+					navigator.clipboard.writeText(textToCopy)
+						.then(() => {
+							alert("메일 주소가 복사되었습니다!");
+						})
+						.catch(err => {
+							console.error("복사에 실패했습니다.", err);
+						});
+				}
+			</script>
+
+	</body>
+</html>
