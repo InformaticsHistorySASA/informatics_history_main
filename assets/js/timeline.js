@@ -19,71 +19,7 @@ window.onload = function () {
     const menuContainer = document.querySelector('.menu-container');
     let isMenuOpen = false;
 
-    // minorMenuButton.addEventListener('click', function (event) {
-    //     event.preventDefault();
-    //     if (isMenuOpen) {
-    //         menuContainer.classList.remove('open');
-    //     } else {
-    //         menuContainer.classList.add('open');
-    //     }
-    //     isMenuOpen = !isMenuOpen;
-    // });
-
-
-    // major_field = "";
-    // minor_field = "";
-    // console.log(menubutton)
-    // for (let i = 0; i < menubutton.length; i++) {
-    //     menubutton[i].addEventListener('click', function () {
-    //         // 클릭된 요소에 대한 동작을 정의
-    //         minor_field="";
-    //         if(menubutton[i].textContent=="HOME") major_field="";
-    //         else major_field=menubutton[i].textContent;
-    //         console.log(major_field,minor_field);
-    //         loadAll();
-    //     });
-    // }
-};
-
-
-
-// 스크롤 이벤트 리스너 함수 정의
-// function handleScroll() {
-//     const containers = document.querySelectorAll('.container');
-//     containers.forEach(container => {
-//         const rect = container.getBoundingClientRect();
-
-//         // 요소가 뷰포트 안에 들어왔을 때
-//         if (rect.top < window.innerHeight && rect.bottom >= 0) {
-//             container.classList.add('show');
-//         } else {
-//             container.classList.remove('show');
-//         }
-//     });
-
-// }
-
-
-// 팝업 관련 코드
-
-
-// document.addEventListener('click', function (event) {
-//     console.log(overlay);
-//     if (!info.contains(event.target) && is_info_visible == true) { //안보이게하기
-//         is_info_visible = false;
-//         console.log("else");
-//         info.classList.remove("visible");
-//         overlay.classList.remove("visible");
-//     }
-//     else if (helpbutton.contains(event.target) && is_info_visible == false) {
-//         is_info_visible = true;
-//         console.log("hov");
-//         info.classList.add("visible");
-//         overlay.classList.add("visible");
-//     }
-
-// });
-
+}
 let timeline_data = null;
 let rendered_data = null;
 
@@ -168,6 +104,9 @@ function renderTimeLine(data){
             const anchor = document.createElement('a');
             anchor.classList.add('content', to_css_class_name(item.major_field));
             anchor.href = item.link;
+            anchor.addEventListener('click', e => {
+                e.preventDefault();
+            })
             // if(sideClass=='left') anchor.style.left = '20%';
             // else anchor.style.right = '20%';
 
@@ -204,75 +143,6 @@ document.addEventListener('resize', (event)=>{
     event.preventDefault();
     renderTimeLine(rendered_data);
 })
-function loadAll_tester() {
-    const got = [
-        {
-            "year": "-300",
-            "text": "최초의 알고리즘",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "./single.html",
-            "major_field":"SOFTWARE"
-        },
-        {
-            "year": "2010",
-            "text": "사이버펑크",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "./single.html",
-            "major_field":"HARDWARE"
-        },
-        {
-            "year": "2011",
-            "text": "유닉스 커널을 C 언어로 재작성",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"HARDWARE"
-        },
-        {
-            "year": "2012",
-            "text": "소프트웨어 1: Phasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"SOFTWARE"
-        },
-        {
-            "year": "2020",
-            "text": "소프트웨어 2: hummPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"SOFTWARE"
-        },
-        {
-            "year": "2030",
-            "text": "네트워크 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"NETWORK & SECURITY"
-        },
-        {
-            "year": "2031",
-            "text": "보안 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"NETWORK & SECURITY"
-        },
-        {
-            "year": "2040",
-            "text": "데이터 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"DATA & AI"
-        },
-        {
-            "year": "2077",
-            "text": "인공지능 1: ahahahahaPhasellus sed ultricies mi congue ullam corper. Praesent tincidunt sed tellus ut rutrum.",
-            "image": "새 비트맵 이미지.bmp",
-            "link": "https://velog.io/@sanna422/CSS-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC",
-            "major_field":"DATA & AI"
-        }
-    ];
-    timeline_data = got;
-    renderTimeLine(got);
-}
 
 
 function loadAll_real() {
