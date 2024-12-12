@@ -129,14 +129,14 @@
         "year": "1957",
         "text": "Fortran \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Fortran_logo.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
         "year": "1958",
         "text": "Lisp \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/180px-Lisp_logo.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -150,7 +150,7 @@
         "year": "1959",
         "text": "COBOL \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/COBOL.jpg",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -283,7 +283,7 @@
         "year": "1972",
         "text": "C \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/C_Programming_Language.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -332,7 +332,7 @@
         "year": "1978",
         "text": "SQL \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/SQL.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -395,7 +395,7 @@
         "year": "1983",
         "text": "C++ \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/CPP.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -535,14 +535,14 @@
         "year": "1995",
         "text": "Java \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/JAVA.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
         "year": "1995",
         "text": "JavaScript \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/JS.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -605,7 +605,7 @@
         "year": "2000",
         "text": "C# \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/CSHARP.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -717,7 +717,7 @@
         "year": "2009",
         "text": "Go \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/GOLANG.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -766,7 +766,7 @@
         "year": "2014",
         "text": "Swift \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Swift_logo.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
@@ -801,7 +801,7 @@
         "year": "2016",
         "text": "TypeScript \uc5b8\uc5b4",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/TS.png",
-        "link": "",
+        "link": "./single.html?id=programming_languages",
         "major_field": "SOFTWARE"
     },
     {
