@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://storage.googleapis.com/informatics_history_main/posts/algorithm.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single</title>
+</head>
+<body>
+    <video src="https://storage.googleapis.com/informatics_history_main/user_files/Rhistory.mp4" autoplay muted loop></video>
+    <p>R 언어의 역사를 알려주는 위 애니메이션은 R을 통해 프로그래밍 되었다. 아래는 그 소스 코드이다.</p>
+    <pre>
+        # 필요한 패키지 설치 및 로드
+        if (!requireNamespace("ggplot2", quietly = TRUE)) install.packages("ggplot2")
+        if (!requireNamespace("gganimate", quietly = TRUE)) install.packages("gganimate")
+        if (!requireNamespace("gifski", quietly = TRUE)) install.packages("gifski")
+        if (!requireNamespace("dplyr", quietly = TRUE)) install.packages("dplyr")
+        if (!requireNamespace("ggrepel", quietly = TRUE)) install.packages("ggrepel")
+        if (!requireNamespace("tidyr", quietly = TRUE)) install.packages("tidyr")
+        
+        library(ggplot2)
+        library(gganimate)
+        library(gifski)
+        library(dplyr)
+        library(ggrepel)
+        library(tidyr)
+        
+        # 데이터 준비
+        r_history &lt;- data.frame(
+          EventDate = as.Date(c("1993-08-01", "1995-04-01", "1997-12-01", "2000-02-29",
+                                "2004-10-04", "2005-10-14", "2007-02-28", "2010-04-23",
+                                "2013-04-03", "2016-04-14", "2020-04-24", "2023-04-21")),
+          Event = c("R의 첫 버전 공개", 
+                    "CRAN 설립", 
+                    "R 0.99.0 출시", 
+                    "R 1.0.0 출시", 
+                    "R 2.0.0 출시", 
+                    "RStudio 설립",
+                    "ggplot2 출시", 
+                    "R 3.0.0 출시", 
+                    "R 3.5.0 출시", 
+                    "R 3.6.0 출시", 
+                    "R 4.0.0 출시", 
+                    "R 4.3.0 출시")
+        )
+        
+        # 애니메이션을 위한 시간 범위 설정
+        start_date &lt;- as.Date("1993-01-01")
+        end_date &lt;- as.Date("2024-01-01")
+        
+        # 모든 이벤트의 날짜를 포함하는 데이터 프레임 생성
+        timeline_dates &lt;- seq.Date(start_date, end_date, by = "month")
+        
+        animation_data &lt;- data.frame(FrameTime = timeline_dates)
+        
+        # 각 이벤트에 대해 상태(Status)를 지정하여 이벤트가 발생했는지 여부를 나타냄
+        animation_data &lt;- animation_data %>%
+          mutate(FrameTime = as.Date(FrameTime)) %>%
+          crossing(r_history) %>%
+          mutate(Status = ifelse(FrameTime >= EventDate, "Occurred", "Not Yet"))
+        
+        # 애니메이션 타임라인 생성
+        animated_timeline &lt;- ggplot(animation_data, aes(x = EventDate, y = 0)) +
+          # 타임라인 수평선
+          geom_hline(yintercept = 0, color = "black", size = 0.5) +
+          # 이벤트 세그먼트
+          geom_segment(aes(xend = EventDate, y = 0, yend = 0.3), color = "grey", size = 1) +
+          # 이벤트 점 (처음에는 회색, 이벤트 시점에 도달하면 주황색으로 변경)
+          geom_point(aes(y = 0.3, color = Status), size = 5) +
+          scale_color_manual(values = c("Not Yet" = "grey", "Occurred" = "darkorange")) +
+          # 이벤트 레이블 (처음에는 투명, 이벤트 시점에 도달하면 나타남)
+          geom_text_repel(aes(y = 0.3, label = ifelse(Status == "Occurred", Event, "")),
+                          nudge_y = 0.2, direction = "y", angle = 45, hjust = 0, size = 5, segment.color = NA) +
+          # 우주선 추가 (삼각형 모양)
+          geom_point(aes(x = FrameTime, y = -0.1), shape = 24, size = 6, color = "blue", fill = "blue") +
+          # 애니메이션 설정
+          transition_time(FrameTime) +
+          # x축 설정
+          scale_x_date(date_labels = "%Y", date_breaks = "2 years", limits = c(start_date, end_date)) +
+          # y축 설정
+          ylim(-0.5, 1) +
+          # 테마 설정
+          theme_minimal() +
+          theme(
+            axis.title = element_blank(),
+            axis.text.y = element_blank(),
+            axis.text.x = element_text(size = 12),
+            axis.ticks = element_blank(),
+            panel.grid = element_blank(),
+            plot.title = element_text(size = 20, face = "bold")
+          ) +
+          # 그래프 제목 설정
+          labs(
+            title = "R 언어의 역사 타임라인",
+            x = "년도"
+          )
+        
+        # 애니메이션 생성 및 출력
+        animate(animated_timeline, nframes = 200, fps = 20, width = 1000, height = 400, renderer = gifski_renderer(loop = FALSE))
+    </pre>
+</body></html>
