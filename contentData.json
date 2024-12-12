@@ -108,7 +108,7 @@
         "year": "1956",
         "text": "\ucd5c\ucd08\uc758 \ub514\uc2a4\ud06c \uc6b4\uc601\uccb4\uc81c(IBM350)",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/IBM350.jpg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -185,14 +185,14 @@
         "year": "1961",
         "text": "MIT CTSS\uac1c\ubc1c",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/MITCTSS.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
         "year": "1964",
         "text": "IBM OS/360",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/IBM360.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -227,7 +227,7 @@
         "year": "1969",
         "text": "Unix \uac1c\ubc1c \uc2dc\uc791- AT&T, Bell Lab",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/ATNT.png",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -262,7 +262,7 @@
         "year": "1971",
         "text": "Unix \uccab \ubc84\uc804 \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/UNIX_first.png",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -290,7 +290,7 @@
         "year": "1973",
         "text": "Unix\ub97c C\uc5b8\uc5b4\ub85c \uc7ac\uc791\uc131",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/UNIX_C.jpeg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -311,14 +311,14 @@
         "year": "1975",
         "text": "PC\uc6a9 \uc6b4\uc601\uccb4\uc81c \ucd9c\uc2dc : IBM-CP/M",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/CPM.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
         "year": "1977",
         "text": "Apple DOS",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/(1978) Apple DOS.jpeg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -367,7 +367,7 @@
         "year": "1981",
         "text": "IBM PC\uc5d0 MS-DOS \ub3c4\uc785",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/MSDOS.svg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -409,7 +409,7 @@
         "year": "1984",
         "text": "Mac OS \ucd08\uae30 \ubc84\uc804",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/MACOS_logo.svg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -423,7 +423,7 @@
         "year": "1985",
         "text": "Windows 1.0 - MS-DOS\uc704 GUI",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Window1.0.gif",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -493,7 +493,7 @@
         "year": "1991",
         "text": "Linux \uccab \ubc84\uc804",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/LINUX_loog.png",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -507,7 +507,7 @@
         "year": "1993",
         "text": "Windows NT \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/WindowsNT.bmp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -521,7 +521,7 @@
         "year": "1995",
         "text": "Windows 95 \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Windows95.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -591,7 +591,7 @@
         "year": "2000",
         "text": "Windows 2000 \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Windows2000.svg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -640,14 +640,14 @@
         "year": "2001",
         "text": "Mac OS X \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/MACOSX.png",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
         "year": "2001",
         "text": "Windows XP \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/WindowsXP.gif",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -689,14 +689,14 @@
         "year": "2007",
         "text": "iOS \uacf5\uac1c",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/iOS1.jpg",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
         "year": "2008",
         "text": "Android \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/ANDROID.png",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -731,7 +731,7 @@
         "year": "2011",
         "text": "Chrome OS \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/chromeOS.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -780,7 +780,7 @@
         "year": "2015",
         "text": "Windows 10 \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Windows_10_Logo.png",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -843,7 +843,7 @@
         "year": "2020",
         "text": "macOS Big Sur \ubc1c\ud45c",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/MACOS_BIg_Sur.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     },
     {
@@ -857,7 +857,7 @@
         "year": "2021",
         "text": "Windows 11 \ucd9c\uc2dc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Windows11.webp",
-        "link": "",
+        "link": "./posts/pgy_OS_all-main/index.html",
         "major_field": "SOFTWARE"
     }
 ]
