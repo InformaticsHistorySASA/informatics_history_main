@@ -18,7 +18,7 @@ if(urlSearch.has('id')){
         date.innerHTML = data.date;
         thumbnail.src = `${data.thumbnail}`;
         if('content' in data) content.innerHTML = data.content;
-        else content.innerHTML = `<iframe id="only-iframe" src=\"./posts/${postId}.html\" />`;
+        else content.innerHTML = `<iframe id="only-iframe" src="./posts/${postId}.html" allowfullscreen allow="fullscreen" />`;
 
         const iframe = document.getElementById("only-iframe");
 

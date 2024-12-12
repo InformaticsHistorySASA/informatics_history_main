@@ -1,0 +1,25 @@
+.fullscreen-button {
+    width: 50px; /* 너비 */
+    height: 50px; /* 높이 */
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명한 배경색 */
+    border-radius: 50%; /* 동그랗게 만들기 */
+    display: flex; /* 가운데 정렬을 위한 flexbox */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    cursor: pointer; /* 클릭 가능 마우스 포인터 */
+    transition: background-color 0.3s ease; /* 마우스 오버 효과 추가 */
+
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.fullscreen-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* 호버 시 색상 진하게 */
+}
+
+.fullscreen-button::after {
+    content: "⛶"; /* 버튼 아이콘 */
+    color: white; /* 아이콘 색상 */
+    font-size: 20px; /* 아이콘 크기 */
+}
