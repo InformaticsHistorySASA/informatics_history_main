@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://storage.googleapis.com/informatics_history_main/posts/algorithm.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single</title>
+</head>
+<body>
+    <iframe id="only-iframe" src="./python_sub.html" style="width:100%;"></iframe>
+    <p>python 언어의 역사를 알려주는 위 애니메이션은 python을 통해 프로그래밍 되었다. 아래는 그 소스 코드이다.</p>
+    <pre># 파이썬의 역사를 시각적으로 표현하는 코드 (디자인 개선)
+        import turtle
+        import time
+        
+        # 화면 설정 및 초기화
+        def setup_screen():
+            screen = turtle.Screen()
+            screen.setup(width=1600, height=600)
+            screen.bgcolor("#0d1b2a")  # 어두운 네이비 블루 배경
+            screen.title("파이썬의 역사 - 타임라인 여행")
+            screen.tracer(0)  # 화면 업데이트를 제어하기 위해 tracer 설정
+            return screen
+        
+        # 타임라인 선 그리기 (이미지처럼 구불구불한 형태)
+        def draw_timeline():
+            line = turtle.Turtle()
+            line.hideturtle()
+            line.color("#00b4d8")  # 네온 블루 컬러
+            line.width(4)
+            line.penup()
+            line.goto(-600, 200)
+            line.pendown()
+            line.forward(600)  # 오른쪽으로 직선 그리기
+            line.right(90)
+            line.forward(200)  # 아래로 이동
+            line.right(90)
+            line.forward(600)  # 왼쪽으로 이동
+            line.left(90)
+            line.forward(200)  # 아래로 이동
+            line.left(90)
+            line.forward(600)  # 오른쪽으로 이동
+        
+        # 연도와 설명을 화면에 출력하고, 관련된 이미지를 표시 (페이드 인/페이드 아웃 효과 추가)
+        def display_event(year, event, year_turtle, event_turtle, image_turtle, image_file):
+            year_turtle.clear()
+            event_turtle.clear()
+            image_turtle.clear()
+            year_turtle.goto(300, 150)  # 연도를 타임라인 오른쪽에 표시
+            fade_in_text(year_turtle, year, font=("Courier", 24, "bold"))
+            event_turtle.goto(300, 110)  # 이벤트 설명을 그 아래에 표시
+            fade_in_text(event_turtle, event, font=("Courier", 16, "normal"))
+        
+            # 이미지 표시 (연도 아래)
+            image_turtle.goto(300, -100)
+            image_turtle.shape(image_file)
+            image_turtle.showturtle()
+            image_turtle.getscreen().update()
+        
+        # 페이드 인 효과를 구현하는 함수
+        # 페이드 인 이미지 효과를 구현하는 함수
+        def fade_in_image(image_turtle):
+            for intensity in range(0, 11):
+                image_turtle.color((intensity / 10.0, intensity / 10.0, intensity / 10.0))
+                image_turtle.getscreen().update()
+                time.sleep(0.05)
+        def fade_in_text(text_turtle, text, font):
+            for intensity in range(0, 11):
+                text_turtle.clear()
+                text_turtle.color((intensity / 10.0, intensity / 10.0, 1.0))  # 글자 색상을 점점 밝게 (파란색 계열)
+                text_turtle.write(text, font=font, align="center")
+                text_turtle.getscreen().update()
+                time.sleep(0.05)
+        
+        # 페이드 아웃 효과를 구현하는 함수
+        # 페이드 아웃 이미지 효과를 구현하는 함수
+        def fade_out_image(image_turtle):
+            for intensity in range(10, -1, -1):
+                image_turtle.color((intensity / 10.0, intensity / 10.0, intensity / 10.0))
+                image_turtle.getscreen().update()
+                time.sleep(0.05)
+            image_turtle.hideturtle()
+        def fade_out_text(year_turtle, event_turtle, image_turtle, year_text, event_text):
+            fade_out_image(image_turtle)
+            for intensity in range(10, -1, -1):
+                year_turtle.clear()
+                event_turtle.clear()
+                year_turtle.color((intensity / 10.0, intensity / 10.0, 1.0))  # 연도 색상을 점점 어둡게 (파란색 계열)
+                event_turtle.color((intensity / 10.0, intensity / 10.0, 1.0))  # 이벤트 설명 색상을 점점 어둡게
+                year_turtle.write(year_text, font=("Courier", 24, "bold"), align="center")
+                event_turtle.write(event_text, font=("Courier", 16, "normal"), align="center")
+                year_turtle.getscreen().update()
+                time.sleep(0.05)
+            image_turtle.hideturtle()  # 이미지도 함께 사라지게 함
+        
+        # 우주선 설정 (모양과 색상 변경)
+        def setup_spaceship():
+            spaceship = turtle.Turtle()
+            spaceship.shape("triangle")
+            spaceship.color("#f77f00")  # 네온 오렌지 컬러
+            spaceship.shapesize(stretch_wid=1.0, stretch_len=1.0)  # 우주선을 조금 더 크게
+            spaceship.penup()
+            spaceship.goto(-600, 200)  # 초기 위치 설정
+            spaceship.setheading(0)  # 오른쪽을 향하도록 설정
+            return spaceship
+        
+        # 주황색 원을 표시할 위치 계산
+        def calculate_marker_positions():
+            positions = [
+                (-600, 200), (0, 200), (0, 0), (-600, 0), (-600, -200), (0, -200)
+            ]
+            markers = []
+            
+            # 시작점과 처음 방향이 바뀌는 지점의 1:3, 3:1 내분점 계산
+            start_x, start_y = positions[0]
+            end_x, end_y = positions[1]
+            x_1_3 = (3 * start_x + end_x) / 4
+            y_1_3 = (3 * start_y + end_y) / 4
+            x_3_1 = (start_x + 3 * end_x) / 4
+            y_3_1 = (start_y + 3 * end_y) / 4
+            markers.append((x_1_3, y_1_3))
+            markers.append((x_3_1, y_3_1))
+        
+            # 두 번째 방향 바뀌는 지점과 세 번째 지점의 1:3, 3:1 내분점 계산
+            start_x, start_y = positions[2]
+            end_x, end_y = positions[3]
+            x_1_3 = (3 * start_x + end_x) / 4
+            y_1_3 = (3 * start_y + end_y) / 4
+            x_3_1 = (start_x + 3 * end_x) / 4
+            y_3_1 = (start_y + 3 * end_y) / 4
+            markers.append((x_1_3, y_1_3))
+            markers.append((x_3_1, y_3_1))
+        
+            # 네 번째 방향 바뀌는 지점과 마지막 지점의 1:3, 3:1 내분점 계산
+            start_x, start_y = positions[4]
+            end_x, end_y = positions[5]
+            x_1_3 = (3 * start_x + end_x) / 4
+            y_1_3 = (3 * start_y + end_y) / 4
+            x_3_1 = (start_x + 3 * end_x) / 4
+            y_3_1 = (start_y + 3 * end_y) / 4
+            markers.append((x_1_3, y_1_3))
+            markers.append((x_3_1, y_3_1))
+            
+            return markers
+        
+        # 타임라인 이동 함수 (정확하게 경로를 따라 이동하며 이벤트 표시)
+        def move_spaceship(spaceship, screen, positions, year_turtle, event_turtle, image_turtle, history, marker_positions, image_files):
+            markers = [draw_event_marker(position) for position in marker_positions]
+            history_index = 0
+            num_markers = len(marker_positions)
+        
+            for i in range(len(positions) - 1):
+                start_x, start_y = positions[i]
+                end_x, end_y = positions[i + 1]
+                spaceship.setheading(spaceship.towards(end_x, end_y))
+        
+                # 우주선을 경로의 끝까지 이동
+                while spaceship.distance(end_x, end_y) > 5:
+                    spaceship.forward(4)
+                    screen.update()  # 화면 업데이트
+                    time.sleep(0.01)
+        
+                    # 주황색 마커 위치에 도달할 때 이벤트 표시
+                    if history_index < len(history):
+                        marker_x, marker_y = marker_positions[history_index]
+                        if spaceship.distance(marker_x, marker_y) < 5:
+                            year, event = history[history_index]
+                            image_file = image_files[history_index]
+                            display_event(year, event, year_turtle, event_turtle, image_turtle, image_file)
+                            draw_event_marker((marker_x, marker_y), active=True)  # 전구 켜지는 느낌으로 표시
+                            for _ in range(150):  # 1.5초 동안 화면 갱신
+                                screen.update()
+                                time.sleep(0.01)
+                            fade_out_text(year_turtle, event_turtle, image_turtle, year, event)  # 연도, 설명 및 이미지 동시에 페이드 아웃 적용
+                            history_index += 1
+        
+        # 이벤트 마커 그리기 (네온 느낌 추가)
+        def draw_event_marker(position, active=False):
+            marker = turtle.Turtle()
+            marker.hideturtle()
+            marker.penup()
+            marker.goto(position)
+            color = "#ffff00" if active else "#808080"  # 전구가 켜질 때는 더 밝은 색으로 변경
+            marker.dot(30, color)  # 네온 옐로우 컬러로 이벤트를 표시하는 원형 마커
+        
+        # 메인 파이썬 이야기 함수
+        def python_story():
+            history = [
+                ("1980s", "귀도 반 로섬이 더 나은 언어를 만들기로 결심한 시기"),
+                ("1991", "파이썬의 첫 번째 버전 0.9.0 발표"),
+                ("1994", "파이썬 1.0 출시, 간결한 구문으로 인기를 얻음"),
+                ("2000", "파이썬 2.0 출시, 리스트 내포와 가비지 컬렉션 추가"),
+                ("2008", "파이썬 3.0 출시, 더 직관적인 언어로 개선"),
+                ("2020s", "파이썬이 데이터 과학, AI, 웹 개발 등 다양한 분야에서 사용됨"),
+            ]
+        
+            image_files = [
+                "./guido_1980s.gif", 
+                "./python_0_9_0.gif", 
+                "./python_1_0.gif",
+                "./python_2_0.gif", 
+                "./python_3_0.gif", 
+                "./python_modern.gif"
+            ]
+        
+            screen = setup_screen()
+            for image_file in image_files:
+                turtle.register_shape(image_file)  # 이미지 파일 등록 (GIF 형식 필요)
+            
+            draw_timeline()
+            spaceship = setup_spaceship()
+            year_turtle = turtle.Turtle()
+            event_turtle = turtle.Turtle()
+            image_turtle = turtle.Turtle()
+            year_turtle.hideturtle()
+            event_turtle.hideturtle()
+            image_turtle.hideturtle()
+            year_turtle.color("#00e1ff")  # 네온 블루 컬러
+            event_turtle.color("#00e1ff")  # 네온 블루 컬러
+            year_turtle.penup()
+            event_turtle.penup()
+            image_turtle.penup()
+        
+            # 타임라인을 따라 이동할 지점들 지정 (경로를 따라 정확히 조정)
+            positions = [
+                (-600, 200),   # 시작 위치
+                (0, 200),      # 오른쪽 첫 번째 직선 끝
+                (0, 0),        # 아래로 이동
+                (-600, 0),     # 왼쪽으로 이동
+                (-600, -200),  # 아래로 이동
+                (0, -200),     # 오른쪽으로 이동
+            ]
+        
+            # 주황색 원을 그릴 위치 계산
+            marker_positions = calculate_marker_positions()
+        
+            move_spaceship(spaceship, screen, positions, year_turtle, event_turtle, image_turtle, history, marker_positions, image_files)
+        
+            screen.update()
+            turtle.done()
+        
+        if __name__ == "__main__":
+            python_story()
+        </pre>
+<script>
+    const iframe = document.getElementById("only-iframe");
+    iframe.onload = function() {
+        try {
+            const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight + 100;
+            iframe.style.height = iframeContentHeight + "px";
+        } catch (error) {
+            console.error("Cross-origin access issue:", error);
+        }
+    };  
+</script>
+</body></html>

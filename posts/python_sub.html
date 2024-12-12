@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Timeline</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d1b2a;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+    }
+    .timeline {
+      position: absolute;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+    }
+    .event {
+      color: #00e1ff;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      position: absolute;
+      transition: opacity 1s;
+      opacity: 0;
+    }
+    .year {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .description {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="timelineCanvas" width="1600" height="600"></canvas>
+  <div class="event" id="eventInfo" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <div class="year" id="year"></div>
+    <div class="description" id="description"></div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('timelineCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const events = [
+      { year: '1980s', description: '귀도 반 로섬이 더 나은 언어를 만들기로 결심한 시기' },
+      { year: '1991', description: '파이썬의 첫 번째 버전 0.9.0 발표' },
+      { year: '1994', description: '파이썬 1.0 출시, 간결한 구문으로 인기를 얻음' },
+      { year: '2000', description: '파이썬 2.0 출시, 리스트 내포와 가비지 컬렉션 추가' },
+      { year: '2008', description: '파이썬 3.0 출시, 더 직관적인 언어로 개선' },
+      { year: '2020s', description: '파이썬이 데이터 과학, AI, 웹 개발 등 다양한 분야에서 사용됨' }
+    ];
+
+    const eventPositions = [
+      { x: 200, y: 100 },
+      { x: 800, y: 100 },
+      { x: 800, y: 300 },
+      { x: 200, y: 300 },
+      { x: 200, y: 500 },
+      { x: 800, y: 500 }
+    ];
+
+    const spaceship = { x: 200, y: 100, radius: 20, color: '#f77f00' };
+
+    let currentEventIndex = 0;
+
+    function drawTimeline() {
+      ctx.strokeStyle = '#00b4d8';
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.moveTo(200, 100);
+      ctx.lineTo(800, 100);
+      ctx.lineTo(800, 300);
+      ctx.lineTo(200, 300);
+      ctx.lineTo(200, 500);
+      ctx.lineTo(800, 500);
+      ctx.stroke();
+
+      eventPositions.forEach((pos) => {
+        ctx.fillStyle = '#808080';
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 10, 0, Math.PI * 2);
+        ctx.fill();
+      });
+    }
+
+    function drawSpaceship() {
+      ctx.fillStyle = spaceship.color;
+      ctx.beginPath();
+      ctx.arc(spaceship.x, spaceship.y, spaceship.radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function moveToNextEvent() {
+      const target = eventPositions[currentEventIndex];
+
+      const dx = (target.x - spaceship.x) / 20;
+      const dy = (target.y - spaceship.y) / 20;
+
+      const interval = setInterval(() => {
+        spaceship.x += dx;
+        spaceship.y += dy;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawTimeline();
+        drawSpaceship();
+
+        if (Math.abs(spaceship.x - target.x) < 5 && Math.abs(spaceship.y - target.y) < 5) {
+          spaceship.x = target.x;
+          spaceship.y = target.y;
+          clearInterval(interval);
+          displayEvent(currentEventIndex);
+        }
+      }, 50);
+    }
+
+    function displayEvent(index) {
+      const eventInfo = document.getElementById('eventInfo');
+      const yearDiv = document.getElementById('year');
+      const descriptionDiv = document.getElementById('description');
+
+      yearDiv.textContent = events[index].year;
+      descriptionDiv.textContent = events[index].description;
+
+      eventInfo.style.opacity = 1;
+
+      setTimeout(() => {
+        eventInfo.style.opacity = 0;
+        currentEventIndex++;
+        if (currentEventIndex < events.length) {
+          moveToNextEvent();
+        }
+      }, 3000);
+    }
+
+    function startTimeline() {
+      drawTimeline();
+      drawSpaceship();
+      moveToNextEvent();
+    }
+
+    startTimeline();
+  </script>
+</body>
+</html>

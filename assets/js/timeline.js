@@ -104,8 +104,8 @@ function renderTimeLine(data){
             const anchor = document.createElement('a');
             anchor.classList.add('content', to_css_class_name(item.major_field));
             anchor.href = item.link;
-            anchor.addEventListener('click', e => {
-                if(!item.link) e.preventDefault();
+            if(!item.link) anchor.addEventListener('click', e => {
+                e.preventDefault();
             })
             // if(sideClass=='left') anchor.style.left = '20%';
             // else anchor.style.right = '20%';
