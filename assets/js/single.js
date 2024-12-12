@@ -31,18 +31,15 @@ if(urlSearch.has('id')){
             }
         };  
     }
-    // handleData({
-    //     "id" : "caesar",
-    //     "title" : "카이사르 암호",
-    //     "subtitle" : "카이사르 암호 복호화",
-    //     "author" : "박제준",
-    //     "date" : "2024-10-31",
-    //     "content":`<iframe id="only-iframe" src=\"./posts/caesar.html\" />`
-    // });
     fetch(`./posts/${postId}.json`)
         .then(response => response.json())  // JSON 파일을 파싱
         .then(handleData)
-        .catch(error => console.error('Error loading JSON:', error)); // 오류 처리
+        .catch(error => {
+            console.error('Error loading JSON:', error);
+            redirect = document.createElement('a');
+            redirect.href = "./timeline.html";
+            redirect.click();
+        }); // 오류 처리
 }
 else{
     redirect = document.createElement('a');
