@@ -238,17 +238,22 @@
       const date = document.getElementById('famous-date');
       const anchor2 = document.getElementById('famous-anchor2');
       const img = document.getElementById('famous-img');
-
-      let IDS = []
-      fetch('./postsData.json')
-      .then(response => response.json())
-        .then(data => { IDS = data;})
+      function select_rand_id() {
+    return fetch('./postsData.json')
+        .then(response => response.json())
+        .then(IDS => {
+            // 랜덤 요소 선택
+            return IDS[Math.floor(IDS.length * Math.random())];
+        })
         .catch(error => console.error('Error loading JSON data:', error));
-        
-      const selected = IDS[Math.floor(IDS.length * Math.random())]
-      console.log(selected)
+      }
+
+    // 호출부에서 then 사용
+      select_rand_id().then(selected => {
+          console.log(selected); // 선택된 ID 출력
+
       
-      fetch(`./posts/${selected}`)
+      if(selected) fetch(`./posts/${selected}`)
         .then(response => response.json())  // JSON 파일을 파싱
         .then(data => {
           anchor2.href = anchor1.href = `./single.html?id=${selected.split('.')[0]}`;
@@ -259,6 +264,8 @@
         .catch(error => {
             console.error('Error loading JSON:', error);
         }); // 오류 처리
+
+      });
     </script>
   </body>
 </html>
