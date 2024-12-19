@@ -148,20 +148,20 @@
 
 .card.hw .card-front,
 .card.hw .card-back {
-    background-color: #f7e7e9; /* 파스텔 계열 연한 핑크 톤 */
+    background-color: #FFDDDD; /* 파스텔 계열 연한 핑크 톤 */
 }
 
 .card.sw .card-front,
 .card.sw .card-back {
-    background-color: #FFF9C4; /* 파스텔 계열 연한 노랑 톤 */
+    background-color: #FFFFDD; /* 파스텔 계열 연한 노랑 톤 */
 }
 
 .card.ns .card-front,
 .card.ns .card-back {
-    background-color: #FFF9C4; /* 파스텔 계열 연한 노랑 톤 */
+    background-color: #DDFFDD; /* 파스텔 계열 연한 노랑 톤 */
 }
 
 .card.da .card-front,
 .card.da .card-back {
-    background-color: #FFF9C4; /* 파스텔 계열 연한 노랑 톤 */
+    background-color: #DDFFFF; /* 파스텔 계열 연한 노랑 톤 */
 }
