@@ -19,7 +19,29 @@
 }
 .image {
     margin-top:20px;
-    display: inline-block;
     float: right; /* 이미지를 오른쪽으로 정렬 */
     /* max-width: 150px; */
+}
+
+#goback-button{
+    position: sticky;
+    left: -60px;
+    bottom: 3%;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border: 1em 1em 1em 1em black;
+    margin-top: 15px;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    transition: left 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), /* 일정한 속도로 이동 */
+                opacity 0.5s ease-in-out;
+    opacity: 0;
+    font-size: 10px;
+}
+
+#goback-button.active{
+    opacity: 1;
+    left: 10%;
 }
