@@ -2,20 +2,13 @@
 
 /* 카드 컨테이너에 3D 효과를 적용하기 위한 perspective 설정 */
 .card {
-    /* position: relative;
-    /* 자식 요소의 절대 위치를 위한 기준 */
     width: 250px;
     height: 350px;
-    perspective: 1000px;
-    /* 3D 공간에서의 깊이감을 설정 */
-    /* cursor: pointer; */
-    /* 마우스 포인터 변경 */
+    perspective: 1000px; /* 3D 공간에서의 깊이감을 설정 */
 }
 
 /* 카드 내부를 감싸는 요소에 플립 효과 적용 */
 .card-inner {
-    /* transform: rotateY(0deg); */
-    /* transition: all 1s ease;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -24,30 +17,29 @@
     transform-style: preserve-3d;
     border-radius: 8px;
 }
-.card-front,.card-back{
+
+.card-front, .card-back {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
     width: 100%;
     height: 100%;
     transition: transform 0.9s ease !important;
-    backface-visibility: hidden;
-     /* 뒤집을 때 보이지 않게 설정 */
+    backface-visibility: hidden; /* 뒤집을 때 보이지 않게 설정 */
     border-radius: 8px;
     box-sizing: border-box;
-    overflow: hidden; 
-    /* 내용이 넘칠 경우 숨김 */
+    overflow: hidden; /* 내용이 넘칠 경우 숨김 */
 }
+
 .card:hover .card-front,
-.card:focus .card-front{
+.card:focus .card-front {
     transform: rotateY(-180deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover .card-back,
-.card:focus .card-back{
+.card:focus .card-back {
     transform: rotateY(0deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -62,7 +54,7 @@
     transform: rotateY(0deg);
 }
 
-.card-back{
+.card-back {
     background: #f0f0f0;
     display: flex;
     align-items: center;
@@ -76,36 +68,59 @@
 }
 
 
-
 /* 카드 앞면 이미지 스타일 */
 .card-front img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    border-radius: 8px 8px 0 0;
-    /*상단 모서리만 둥글게 */
+    border-radius: 8px;
+    margin-top: 2em;
 }
 
 /* 카드 앞면 제목 스타일 */
 .card-front h3 {
-    margin-top: 1em;
-    font-size: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    font-size: 0.8em;
     color: #333;
 }
 
 /* 카드 앞면 설명 텍스트 스타일 */
 .card-front p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #666;
-    margin-top: 0.5em;
+    margin-top: -2em;
 }
 
-/* 카드 호버 시 그림자 효과 */
-
-
+.hash {
+    color: #3f729b !important;
+    font-size: 0.7em !important;
+}
 
 
 /* 반응형 디자인 예시 */
-@media (max-width: 768px) {
+@media (max-width: 10000px) {
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .card-front, .card-back {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1680px) {
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .card-front, .card-back {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 736px) {
     .card {
         width: 200px;
         height: 280px;
@@ -125,4 +140,28 @@
     .card-front, .card-back {
         font-size: 0.9em;
     }
+}
+
+/*----------------------------------------------------*/
+/* 추가된 카테고리별 색상 스타일링 부분               */
+/*----------------------------------------------------*/
+
+.card.hw .card-front,
+.card.hw .card-back {
+    background-color: #f7e7e9; /* 파스텔 계열 연한 핑크 톤 */
+}
+
+.card.sw .card-front,
+.card.sw .card-back {
+    background-color: #FFF9C4; /* 파스텔 계열 연한 노랑 톤 */
+}
+
+.card.ns .card-front,
+.card.ns .card-back {
+    background-color: #FFF9C4; /* 파스텔 계열 연한 노랑 톤 */
+}
+
+.card.da .card-front,
+.card.da .card-back {
+    background-color: #FFF9C4; /* 파스텔 계열 연한 노랑 톤 */
 }
