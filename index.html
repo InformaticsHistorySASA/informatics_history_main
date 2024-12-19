@@ -239,7 +239,12 @@
       const anchor2 = document.getElementById('famous-anchor2');
       const img = document.getElementById('famous-img');
 
-      const IDS = ['AlphaBay.json', 'Arpanet.json', 'DEARChack.json', 'DES.json', 'Ethernet.json', 'FPS.json', 'Freenet.json', 'GPU.json', 'IC.json', 'ICANN.json', 'ILOVEYOU.json', 'Keyboard.json', 'LMC.json', 'MILNET.json', 'Monitor.json', 'Mouse.json', 'NSFNET.json', 'RSA.json', 'Rlang.json', 'Rsa.json', 'SilkRoad.json', 'Speaker.json', 'TCPIP.json', 'TOR.json', 'Transistor.json', 'Viennavirus.json', 'Www.json', 'algorithm.json', 'caesar.json', 'creeper.json', 'dijkstra.json', 'first_algorithm.json', 'first_program.json', 'hacking.json', 'merge_sort.json', 'morsecode.json', 'programming_languages.json', 'python.json', 'quantumnetwork.json', 'quick_sort.json', 'thefirstlongdistancecomputercommunication.json', 'vaccine.json', 'wifi.json']
+      let IDS = []
+      fetch('./postsData.json')
+      .then(response => response.json())
+        .then(data => { IDS = data;})
+        .catch(error => console.error('Error loading JSON data:', error));
+        
       const selected = IDS[Math.floor(IDS.length * Math.random())]
       console.log(selected)
       

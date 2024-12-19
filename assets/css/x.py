@@ -8,9 +8,9 @@ def download_json_files(bucket_name, source_folder, destination_folder):
     
     L = []
     for blob in blobs:
-        destination_path = f"{destination_folder}/{blob.name.split('/')[-1]}"
-        blob.download_to_filename(destination_path)
-        print(f"Downloaded {blob.name} to {destination_path}")
+        # destination_path = f"{destination_folder}/{blob.name.split('/')[-1]}"
+        # blob.download_to_filename(destination_path)
+        # print(f"Downloaded {blob.name} to {destination_path}")
         if blob.name.endswith('.json'):  # Only download .json files
             L.append(blob.name.split('/')[-1])
     return L
