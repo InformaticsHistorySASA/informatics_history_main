@@ -45,7 +45,7 @@
         "year": "1890",
         "text": "\ucc9c\uacf5\uce74\ub4dc(Punch Card)",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/punchcard.png",
-        "link": "",
+        "link": "./single.html?id=punchcard",
         "major_field": "DATA & AI"
     },
     {
@@ -66,7 +66,7 @@
         "year": "1928",
         "text": "Magnetic tape",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/magnetictape.png",
-        "link": "",
+        "link": "./single.html?id=magnetictape",
         "major_field": "DATA & AI"
     },
     {
@@ -87,21 +87,21 @@
         "year": "1950",
         "text": "\ud29c\ub9c1 \ud14c\uc2a4\ud2b8",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/turing_test.png",
-        "link": "",
+        "link": "./single.html?id=turing_test",
         "major_field": "DATA & AI"
     },
     {
         "year": "1956",
         "text": "\ub2e4\ud2b8\uba38\uc2a4 \ud68c\uc758",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Dartmouth_Conference.png",
-        "link": "",
+        "link": "./single.html?id=dartmouth_conference",
         "major_field": "DATA & AI"
     },
     {
         "year": "1956",
         "text": "Hard Disk Drive",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Hard_Disk_Drive.png",
-        "link": "",
+        "link": "./single.html?id=HDD",
         "major_field": "DATA & AI"
     },
     {
@@ -122,7 +122,7 @@
         "year": "1957",
         "text": "\ud37c\uc149\ud2b8\ub860",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Perceptron.png",
-        "link": "",
+        "link": "./single.html?id=perceptron",
         "major_field": "DATA & AI"
     },
     {
@@ -213,14 +213,14 @@
         "year": "1966",
         "text": "ELIZA",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/ELIZA.png",
-        "link": "",
+        "link": "./single.html?id=ELIZA",
         "major_field": "DATA & AI"
     },
     {
         "year": "1967",
         "text": "K-Nearest Neighbors",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/KNN.png",
-        "link": "",
+        "link": "./single.html?id=KNN",
         "major_field": "DATA & AI"
     },
     {
@@ -248,14 +248,14 @@
         "year": "1970",
         "text": "ABBA",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/ABBA.png",
-        "link": "",
+        "link": "./single.html?id=ABBA",
         "major_field": "DATA & AI"
     },
     {
         "year": "1971",
         "text": "\ud50c\ub85c\ud53c \ub514\uc2a4\ud06c",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Floppy_Disk.png",
-        "link": "",
+        "link": "./single.html?id=floppy_disk",
         "major_field": "DATA & AI"
     },
     {
@@ -353,14 +353,14 @@
         "year": "1980",
         "text": "\uc804\ubb38\uac00 \uc2dc\uc2a4\ud15c",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Expert_System.png",
-        "link": "",
+        "link": "./single.html?id=experts_system",
         "major_field": "DATA & AI"
     },
     {
         "year": "1980",
         "text": "Compact Disc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Compact_Disk.png",
-        "link": "",
+        "link": "./single.html?id=CD",
         "major_field": "DATA & AI"
     },
     {
@@ -430,7 +430,7 @@
         "year": "1986",
         "text": "\uc5ed\uc804\ud30c \uc54c\uace0\ub9ac\uc998",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/BackPropagation_Algorithm.png",
-        "link": "",
+        "link": "./single.html?id=BPA",
         "major_field": "DATA & AI"
     },
     {
@@ -465,7 +465,7 @@
         "year": "1989",
         "text": "Q-Learning",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Q-Learning.png",
-        "link": "",
+        "link": "./single.html?id=QL",
         "major_field": "DATA & AI"
     },
     {
@@ -486,7 +486,7 @@
         "year": "1991",
         "text": "SSD",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/SSD.png",
-        "link": "",
+        "link": "./single.html?id=SSD",
         "major_field": "DATA & AI"
     },
     {
@@ -521,7 +521,7 @@
         "year": "1995",
         "text": "SVM",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/SVM.png",
-        "link": "",
+        "link": "./single.html?id=SVM",
         "major_field": "DATA & AI"
     },
     {
@@ -549,7 +549,7 @@
         "year": "1996",
         "text": "USB",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/USB.png",
-        "link": "",
+        "link": "./single.html?id=USB",
         "major_field": "DATA & AI"
     },
     {
@@ -570,7 +570,7 @@
         "year": "1997",
         "text": "Deep Blue",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Deep_Blue.png",
-        "link": "",
+        "link": "./single.html?id=deep_blue",
         "major_field": "DATA & AI"
     },
     {
@@ -640,7 +640,7 @@
         "year": "2001",
         "text": "Random Forest",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Random_Forest.png",
-        "link": "",
+        "link": "./single.html?id=RF",
         "major_field": "DATA & AI"
     },
     {
@@ -731,7 +731,7 @@
         "year": "2011",
         "text": "IBM Watson",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/IBM_Watson.png",
-        "link": "",
+        "link": "./single.html?id=IBM",
         "major_field": "DATA & AI"
     },
     {
@@ -752,14 +752,14 @@
         "year": "2012",
         "text": "AlexNet",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/AlexNet.png",
-        "link": "",
+        "link": "./single.html?id=AlexNet",
         "major_field": "DATA & AI"
     },
     {
         "year": "2014",
         "text": "GANs",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/GANs.png",
-        "link": "",
+        "link": "./single.html?id=GANs",
         "major_field": "DATA & AI"
     },
     {
@@ -780,7 +780,7 @@
         "year": "2015",
         "text": "ResNet",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/ResNet.png",
-        "link": "",
+        "link": "./single.html?id=ResNet",
         "major_field": "DATA & AI"
     },
     {
@@ -794,7 +794,7 @@
         "year": "2016",
         "text": "\uc54c\ud30c\uace0",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/AlphaGo.png",
-        "link": "",
+        "link": "./single.html?id=AlphaGo",
         "major_field": "DATA & AI"
     },
     {
@@ -815,21 +815,21 @@
         "year": "2017",
         "text": "\uc544\uc2e4\ub85c\ub9c8 AI \uc6d0\uce59",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Asilomar_AI_Principles.png",
-        "link": "",
+        "link": "./single.html?id=AAP",
         "major_field": "DATA & AI"
     },
     {
         "year": "2017",
         "text": "transformer",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/transformer.png",
-        "link": "",
+        "link": "./single.html?id=transformer",
         "major_field": "DATA & AI"
     },
     {
         "year": "2018",
         "text": "BERT",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/BERT.png",
-        "link": "",
+        "link": "./single.html?id=BERT",
         "major_field": "DATA & AI"
     },
     {
@@ -843,7 +843,7 @@
         "year": "2020",
         "text": "GPT-3",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/GPT-3.png",
-        "link": "",
+        "link": "./single.html?id=GPT-3",
         "major_field": "DATA & AI"
     },
     {
@@ -857,7 +857,7 @@
         "year": "2021",
         "text": "DALL-E",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/DALL-E.png",
-        "link": "",
+        "link": "./single.html?id=DALL-E",
         "major_field": "DATA & AI"
     },
     {

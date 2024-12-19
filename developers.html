@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+  Future Imperfect by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Character Cards - Future Imperfect by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 기존의 main.css를 유지하되, flip.css를 추가로 링크 -->
+    <link rel="stylesheet" href="./assets/css/flip.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- 기존 <style> 태그 내 플립 관련 CSS 제거 -->
+    <style>
+      /* 기존 스타일 중 플립 효과와 관련된 부분을 제거합니다. */
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+
+      #main {
+        flex: 1;
+      }
+
+      .character-cards {
+        padding: 2em;
+        text-align: center;
+      }
+
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+      }
+
+      /* 플립 효과 관련 CSS는 flip.css로 이동했으므로, 여기서는 다른 스타일만 유지 */
+
+      #footer {
+        margin-top: auto;
+        padding-top: 2em;
+        border-top: 1px solid #eaeaea;
+        text-align: center;
+        width: 100%;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1><a href=".">세계를 움직이는 정보과학의 역사</a></h1>
+        <nav class="links">
+          <ul>
+            <li><a href="./timeline.html">TIMELINE</a></li>
+            <li><a href="./contents.html">CONTENTS</a></li>
+            <li><a href="./character_cards.html">CHARACTER CARDS</a></li>
+            <li><a href="./editor_page.html">EDITOR PAGE</a></li>
+            <li><a href="./developers.html">DEVELOPERS</a></li>
+          </ul>
+        </nav>
+        <nav class="main">
+          <ul>
+            <li class="search">
+              <a class="fa-search" href="#search">Search</a>
+              <form id="search" method="get" action="javascript:void(0);">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search"
+                  onkeypress="Search(event, 'searchInput')"
+                />
+              </form>
+            </li>
+            <li class="menu">
+              <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+          </ul>
+        </nav>
+		
+        <section id="menu">
+          <!-- Search -->
+          <section id="Searchsection">
+            <form class="Search" method="get" action="javascript:void(0);">
+              <input
+                type="text"
+                id="SearchInput"
+                placeholder="Search"
+                onkeypress="Search(event,'SearchInput')"
+              />
+            </form>
+          </section>
+
+          <!-- Links -->
+          <section>
+            <ul class="links">
+              <li>
+                <a href="./timeline.html"><h3>TIMELINE</h3></a>
+              </li>
+              <li>
+                <a href="./contents.html"><h3>CONTENTS</h3></a>
+              </li>
+              <li>
+                <a href="./character_cards.html"><h3>CHARACTER CARDS</h3></a>
+              </li>
+              <li>
+                <a href="./editor_page.html"><h3>EDITOR PAGE</h3></a>
+              </li>
+              <li>
+                <a href="./developers.html"><h3>DEVELOPERS</h3></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Character Cards -->
+        <section class="character-cards">
+          <div class="cards-container">
+
+            <div class="card hw" tabindex="0">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./character_cards_images/09.png">
+                  <h3>고든 무어</h3>
+                  <p>1929.01.03 ~ 2023.03.24</p>
+                  <p class="hash">#엔지니어 #무어의_법칙</p>
+                </div>
+                <div class="card-back">
+                  <p>집적회로 설계의 선구자로 1968년 7월 인텔을 공동창립하였다. '반도체 성능이 2년마다 2배로 증가한다'는 무어의 법칙을 제안한 것으로 유명하다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card hw" tabindex="0">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./character_cards_images/01.png">
+                  <h3>욘스 야콥 베르셀리우스</h3>
+                  <p>1779.08.20 ~ 1848.08.07</p>
+                  <p class="hash">#화학자 #실리콘</p>
+                </div>
+                <div class="card-back">
+                  <p>1823년 규소를 단일물질로 분리해 실리콘을 반도체 등 첨단소재로 사용하게 했다. 실리콘밸리는 실리콘의 첨단기술 상징성을 반영한다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card hw" tabindex="0">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./character_cards_images/02.png">
+                  <h3>니콜라 테슬라</h3>
+                  <p>1856.07.10 ~ 1943.01.07</p>
+                  <p class="hash">#발명가 #현대_전기문명_완성</p>
+                </div>
+                <div class="card-back">
+                  <p>교류를 발명해 전류 전송의 효율성을 높였으며, 테슬라 코일, 테슬라 터빈, 무선 통신 등 다양한 업적으로 전자기학의 혁명적인 발전을 이끌었다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card hw" tabindex="0">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./character_cards_images/03.png">
+                  <h3>존 바딘</h3>
+                  <p>1908.05.23 ~ 1991.01.30</p>
+                  <p class="hash">#물리학자 #2번의_노벨상</p>
+                </div>
+                <div class="card-back">
+                  <p>노벨 물리학상을 두 번 수상한 유일한 사람이다. 벨 연구소에서 트랜지스터 발명을 하여 1956년 노벨 물리학상을 수상하였으며, 초전도 이론(BCS 이론)으로 1972년 노벨 물리학상을 수상하였다.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://www.facebook.com/SASABamboo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/sasa.sanarae/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon solid fa-envelope" onclick="copyText()"><span class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/browser.min.js"></script>
+    <script src="./assets/js/breakpoints.min.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      function copyText() {
+        const textToCopy = "informatics.history.sasa@gmail.com";
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            alert("메일 주소가 복사되었습니다!");
+          })
+          .catch(err => {
+            console.error("복사에 실패했습니다.", err);
+          });
+      }
+    </script>
+  </body>
+</html>
