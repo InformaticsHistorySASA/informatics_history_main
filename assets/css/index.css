@@ -4,12 +4,23 @@
   
 .guide-box-container {
     opacity: 0;
-    display: flex;
     gap: 2em;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     margin-bottom: 50px;
 }
+@media (max-width: 768px) { /* 화면 폭이 768px 이하일 때 */
+    .guide-box-container {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) { /* 화면 폭이 769px 이상일 때 */
+    .guide-box-container {
+        display: flex;
+    }
+}
+
 
 .guide-box-container.active {
     opacity: 1;
