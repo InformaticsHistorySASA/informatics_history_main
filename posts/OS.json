@@ -4,5 +4,6 @@
     "subtitle" : "탐험하듯 운영체제의 역사를 공부해보자!",
     "author" : "정연수",
     "date" : "2024-12-04",
-    "thumbnail" : "https://storage.googleapis.com/informatics_history_main/user_files/OS_page_screenshot.png"
+    "thumbnail" : "https://storage.googleapis.com/informatics_history_main/user_files/OS_page_screenshot.png",
+    "link" : "./posts/pgy_OS_all-main/index.html"
 }
