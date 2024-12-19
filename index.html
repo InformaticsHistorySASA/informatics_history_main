@@ -13,6 +13,7 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -79,12 +80,12 @@
               >
               <a href="https://sasa.sjeduhs.kr/" class="author"
                 ><span class="name">SASA</span
-                ><img src="images/avatar.jpg" alt=""
+                ><img src="https://storage.googleapis.com/informatics_history_main/user_files/SASA.webp" alt="icon"
               /></a>
             </div>
           </header>
-          <a href="single.html" class="image featured"
-            ><img src="images/pic01.jpg" alt=""
+          <a href="./developers.html" class="image featured"
+            ><img src="https://storage.googleapis.com/informatics_history_main/user_files/%EB%8B%A8%EC%B2%B4%EC%82%AC%EC%A7%84.jpg" alt=""
           /></a>
           <p>
             세종과학예술영재학교의 프로젝트 기반 연구는 10년째 이어 내려오는
@@ -102,9 +103,44 @@
             모아놓은 CONTENTS가 있습니다.
           </p>
         </article>
+        <section id="guide-section">
+          <div class="guide-box-container">
+            <div class="guide-box">
+              <a href="./timeline.html">
+                <h2>TIMELINE</h2>
+                <p>기원전부터 21세기까지 정보과학의 역사를 연대표로 살펴보고 다양한 체험을 해보세요</p>
+                <div style="overflow:hidden;"><img src="https://storage.googleapis.com/informatics_history_main/posts/ico.svg" style="width:100%;" /></div>
+              </a>
+            </div>
+            <div class="guide-box">
+              <a href="./contents.html">
+                <h2>CONTENTS</h2>
+                <p>역대 정보과학의 역사 사건과 학생들이 자체 제작한 콘텐츠들의 목록을 보고 검색할 수 있어요</p>
+                <div style="overflow:hidden;"><img src="https://storage.googleapis.com/informatics_history_main/user_files/simple-contents.png" style="width:100%;" /></div>
+              </a>
+            </div>
+          </div>
+          <div class="guide-box-container">
+            <div class="guide-box">
+              <a href="./character_cards.html">
+                <h2>CHARACTER CARDS</h2>
+                <p>정보과학 역사의 주요 인물들의 캐릭터 카드를 모아 볼 수 있어요</p>
+                <div style="overflow:hidden;"><img src="https://storage.googleapis.com/informatics_history_main/posts/ico2.svg" style="width:100%;" /></div>
+              </a>
+            </div>
+            <div class="guide-box">
+              <a href="./developers.html">
+                <h2>DEVELOPERS</h2>
+                <p>이 페이지를 만든 학생들의 코멘트를 볼 수 있어요</p>
+                <div style="overflow:hidden;"><img src="https://storage.googleapis.com/informatics_history_main/posts/dev2.svg" style="width:100%;" /></div>
+              </a>
+            </div>
+          </div>
+        </section>
+
       </div>
       <!-- Sidebar -->
-      <section id="sidebar">
+      <section id="sidebar">  
         <!-- Intro -->
         <section id="intro">
           <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
@@ -120,28 +156,26 @@
             <!-- Mini Post -->
             <article class="mini-post">
               <header>
-                <h3><a href="single.html">Vitae sed condimentum</a></h3>
-                <time class="published" datetime="2015-10-20"
+                <h3><a id="famous-anchor1" href="single.html">Vitae sed condimentum</a></h3>
+                <time id="famous-date" class="published" datetime="2015-10-20"
                   >October 20, 2015</time
                 >
-                <a href="#" class="author"
+                <a href="./developers.html" class="author"
                   ><img src="images/avatar.jpg" alt=""
                 /></a>
               </header>
-              <a href="single.html" class="image"
-                ><img src="images/pic04.jpg" alt=""
+              <a id="famous-anchor2" href="single.html" class="image"
+                ><img id="famous-img" src="images/pic04.jpg" alt=""
               /></a>
             </article>
           </div>
         </section>
 
         <!-- About -->
-        <section class="blurb">
+        <section class="blurb" style="position:sticky;">
           <h2>About</h2>
           <p>
-            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
-            Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor
-            magna enim, ac accumsan tortor cursus at phasellus sed ultricies.
+            스크롤하여 이 페이지에 대해 더 알아보세요 ▼
           </p>
           <ul class="actions"></ul>
         </section>
@@ -183,5 +217,44 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      const guideContainer = document.querySelectorAll('.guide-box-container');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target); // 한 번 active가 되면 더 이상 관찰하지 않음
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+      
+      guideContainer.forEach(item => {observer.observe(item);});
+    });
+    </script>
+    <script>
+      const anchor1 = document.getElementById('famous-anchor1');
+      const date = document.getElementById('famous-date');
+      const anchor2 = document.getElementById('famous-anchor2');
+      const img = document.getElementById('famous-img');
+
+      const IDS = ['AlphaBay.json', 'Arpanet.json', 'DEARChack.json', 'DES.json', 'Ethernet.json', 'FPS.json', 'Freenet.json', 'GPU.json', 'IC.json', 'ICANN.json', 'ILOVEYOU.json', 'Keyboard.json', 'LMC.json', 'MILNET.json', 'Monitor.json', 'Mouse.json', 'NSFNET.json', 'RSA.json', 'Rlang.json', 'Rsa.json', 'SilkRoad.json', 'Speaker.json', 'TCPIP.json', 'TOR.json', 'Transistor.json', 'Viennavirus.json', 'Www.json', 'algorithm.json', 'caesar.json', 'creeper.json', 'dijkstra.json', 'first_algorithm.json', 'first_program.json', 'hacking.json', 'merge_sort.json', 'morsecode.json', 'network.json', 'post_notice.json', 'programming_languages.json', 'python.json', 'quantumnetwork.json', 'quick_sort.json', 'test.json', 'thefirstlongdistancecomputercommunication.json', 'vaccine.json', 'wifi.json']
+      const selected = IDS[Math.floor(IDS.length * Math.random())]
+      console.log(selected)
+      
+      fetch(`./posts/${selected}`)
+        .then(response => response.json())  // JSON 파일을 파싱
+        .then(data => {
+          anchor2.href = anchor1.href = `./single.html?id=${selected.split('.')[0]}`;
+          anchor1.innerText = data.title;
+          img.src = data.thumbnail;
+          date.innerText = data.date;
+        })
+        .catch(error => {
+            console.error('Error loading JSON:', error);
+        }); // 오류 처리
+    </script>
   </body>
 </html>
