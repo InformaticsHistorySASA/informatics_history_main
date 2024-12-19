@@ -9,6 +9,17 @@
 .vsc-initialized{
     text-align : justify;
 }
-#post-thumbnail{
-    width: 60%
+/* #post-thumbnail{
+    max-width: 150px;
+    height:auto;
+    object-fit: contain;
+} */
+.Meta{
+    border-top: solid 1px rgba(160, 160, 160, 0.3);
+}
+.image {
+    margin-top:20px;
+    display: inline-block;
+    float: right; /* 이미지를 오른쪽으로 정렬 */
+    /* max-width: 150px; */
 }
