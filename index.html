@@ -250,7 +250,7 @@
           anchor2.href = anchor1.href = `./single.html?id=${selected.split('.')[0]}`;
           anchor1.innerText = data.title;
           img.src = data.thumbnail;
-          date.innerText = data.author;
+          date.innerText = data.author;;
         })
         .catch(error => {
             console.error('Error loading JSON:', error);
