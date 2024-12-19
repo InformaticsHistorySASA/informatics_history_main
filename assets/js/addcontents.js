@@ -14,7 +14,7 @@ async function loadData() {
                         "year": postdata.title,
                         "text": postdata.subtitle,
                         "image": postdata.thumbnail,
-                        "link": `./single.html?id=${postdata.id}`
+                        "link": !postdata.link ? `./single.html?id=${postdata.id}` : postdata.link
                     });
                 })
                 .catch(error => console.error('Error loading post data:', error))
