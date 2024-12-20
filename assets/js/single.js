@@ -1,6 +1,6 @@
-const urlSearch = new URLSearchParams(location.search);
-if(urlSearch.has('id')){
-    const postId = urlSearch.get('id');
+const urlSearch = new URL(location.href);
+if (urlSearch.searchParams.has('id')) {
+    const postId = urlSearch.searchParams.get('id');
     function handleData(data){
         const tabtitle = document.getElementById('post-tabtitle');
         const title = document.getElementById('post-title');
