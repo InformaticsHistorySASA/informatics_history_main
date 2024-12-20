@@ -148,20 +148,47 @@
 
 .card.hw .card-front,
 .card.hw .card-back {
-    background-color: #FFDDDD; /* 파스텔 계열 연한 핑크 톤 */
+    background-color: #FFDDDD;
 }
 
 .card.sw .card-front,
 .card.sw .card-back {
-    background-color: #FFFFDD; /* 파스텔 계열 연한 노랑 톤 */
+    background-color: #FFFFDD;
 }
 
 .card.ns .card-front,
 .card.ns .card-back {
-    background-color: #DDFFDD; /* 파스텔 계열 연한 노랑 톤 */
+    background-color: #DDFFDD;
 }
 
 .card.da .card-front,
 .card.da .card-back {
-    background-color: #DDFFFF; /* 파스텔 계열 연한 노랑 톤 */
+    background-color: #DDFFFF;
+}
+
+
+
+.card.hwt .card-front,
+.card.hwt .card-back {
+    background-color: #FFBBBB;
+}
+
+.card.swt .card-front,
+.card.swt .card-back {
+    background-color: #FFFFAA;
+}
+
+.card.nst .card-front,
+.card.nst .card-back {
+    background-color: #BBFFBB;
+}
+
+.card.dat .card-front,
+.card.dat .card-back {
+    background-color: #AAFFFF;
+}
+
+.card.pre .card-front,
+.card.pre .card-back {
+    background-color: #BBBBBB;
 }
