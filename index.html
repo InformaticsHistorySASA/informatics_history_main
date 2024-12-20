@@ -250,9 +250,6 @@
 
     // 호출부에서 then 사용
       select_rand_id().then(selected => {
-          console.log(selected); // 선택된 ID 출력
-
-      
       if(selected) fetch(`./posts/${selected}`)
         .then(response => response.json())  // JSON 파일을 파싱
         .then(data => {
