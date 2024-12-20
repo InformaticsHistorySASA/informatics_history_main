@@ -13,6 +13,9 @@
     .guide-box-container {
         display: block;
     }
+    #scroll-guide{
+        display: none;
+    }
 }
 
 @media (min-width: 769px) { /* 화면 폭이 769px 이상일 때 */
