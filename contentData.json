@@ -245,13 +245,6 @@
         "major_field": "NETWORK & SECURITY"
     },
     {
-        "year": "1970",
-        "text": "ABBA",
-        "image": "https://storage.googleapis.com/informatics_history_main/user_files/ABBA.png",
-        "link": "./single.html?id=ABBA",
-        "major_field": "DATA & AI"
-    },
-    {
         "year": "1971",
         "text": "\ud50c\ub85c\ud53c \ub514\uc2a4\ud06c",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Floppy_Disk.png",
@@ -361,6 +354,13 @@
         "text": "Compact Disc",
         "image": "https://storage.googleapis.com/informatics_history_main/user_files/Compact_Disk.png",
         "link": "./single.html?id=CD",
+        "major_field": "DATA & AI"
+    },
+    {
+        "year": "1981",
+        "text": "ABBA",
+        "image": "https://storage.googleapis.com/informatics_history_main/user_files/ABBA.png",
+        "link": "./single.html?id=ABBA",
         "major_field": "DATA & AI"
     },
     {
