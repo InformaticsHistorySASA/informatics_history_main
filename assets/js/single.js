@@ -42,18 +42,20 @@ if(urlSearch.has('id')){
         }); // 오류 처리
 
         const goback = document.getElementById('goback-button');
-        document.addEventListener('scroll', () => {
-            // 현재 스크롤 위치와 문서 높이를 계산
-            const scrollTop = window.scrollY; // 스크롤된 픽셀
-            const windowHeight = window.innerHeight; // 창 높이
-            const documentHeight = document.documentElement.scrollHeight; // 문서 전체 높이
-        
-            // 스크롤이 맨 아래에 도달했는지 확인
-            if (scrollTop + windowHeight >= documentHeight-15) {
-                goback.classList.add('active');
-            }
-        });
-}
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('scroll', () => {
+                // 현재 스크롤 위치와 문서 높이를 계산
+                const scrollTop = window.scrollY; // 스크롤된 픽셀
+                const windowHeight = window.innerHeight; // 창 높이
+                const documentHeight = document.documentElement.scrollHeight; // 문서 전체 높이
+            
+                // 스크롤이 맨 아래에 도달했는지 확인
+                if (scrollTop + windowHeight >= documentHeight-15) {
+                    goback.classList.add('active');
+                }
+            });    
+        })
+    }
 else{
     redirect = document.createElement('a');
     redirect.href = "./";
